@@ -1,0 +1,42 @@
+{
+   "checksum": "dd55ffef7669421af3e7b9f75553de7c",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13102446886000000",
+            "id": "6",
+            "name": "Manjaro Wiki",
+            "type": "url",
+            "url": "https://wiki.manjaro.org/index.php?title=Main_Page"
+         }, {
+            "date_added": "13102446920000000",
+            "id": "7",
+            "name": "Manjaro Forum",
+            "type": "url",
+            "url": "https://forum.manjaro.org/"
+         } ],
+         "date_added": "13174605560122252",
+         "date_modified": "0",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13174605560122256",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13174605560122257",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

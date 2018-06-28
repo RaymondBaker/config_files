@@ -1,0 +1,355 @@
+{
+   "checksum": "58fc80c0d7670fa9fcc07dff6e8ab476",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13069400452254000",
+            "id": "20",
+            "name": "Mann Co. Supply Crate Key - Tremor Games",
+            "sync_transaction_version": "11",
+            "type": "url",
+            "url": "http://www.tremorgames.com/index.php?action=showitem&itemid=8055"
+         }, {
+            "date_added": "13130474363535577",
+            "id": "21",
+            "meta_info": {
+               "last_visited_desktop": "13169196492640447"
+            },
+            "name": "ManWithoutModem comments on Tracker with PDFs/E-Books of College Textbooks",
+            "sync_transaction_version": "12",
+            "type": "url",
+            "url": "https://www.reddit.com/r/trackers/comments/hrgmv/tracker_with_pdfsebooks_of_college_textbooks/c1xrq44/"
+         }, {
+            "date_added": "13147293776439463",
+            "id": "22",
+            "name": "MP3Skull - Fast & Free Mp3 Music Downloads",
+            "sync_transaction_version": "13",
+            "type": "url",
+            "url": "https://www.mp3skulls.audio/"
+         }, {
+            "date_added": "13075017003652000",
+            "id": "23",
+            "name": "mp3Clan",
+            "sync_transaction_version": "14",
+            "type": "url",
+            "url": "http://mp3clan.com/"
+         }, {
+            "children": [ {
+               "date_added": "13092683833565728",
+               "id": "38",
+               "name": "Usefully Embedding Squirrel « Irrelevant Conclusion",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://www.irrelevantconclusion.com/2011/06/usefully-embedding-squirrel/"
+            }, {
+               "date_added": "13076825213356797",
+               "id": "39",
+               "name": "SAT (Separating Axis Theorem) | dyn4j",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://www.dyn4j.org/2010/01/sat/"
+            }, {
+               "date_added": "13076824886545000",
+               "id": "40",
+               "name": "Gaffer on Games | Sending and Receiving Packets",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://gafferongames.com/networking-for-game-programmers/sending-and-receiving-packets/"
+            }, {
+               "date_added": "13105323469266793",
+               "id": "41",
+               "name": "From Zero to Blog in 100 Minutes [1/7] - YouTube",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=b6z8-_TbInQ&list=PLRmyy9vm8xSLp6_s1ok74oFVpM5aRiORM"
+            }, {
+               "date_added": "13081382364406065",
+               "id": "42",
+               "name": "PNPOLY - Point Inclusion in Polygon Test - WR Franklin (WRF)",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://www.ecse.rpi.edu/Homepages/wrf/Research/Short_Notes/pnpoly.html#The%20Method"
+            }, {
+               "date_added": "13086155379152421",
+               "id": "43",
+               "name": "3D GAME ENGINE ARCHITECTURE - PDF Drive",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://www.pdfdrive.net/3d-game-engine-architecture-d324627.html"
+            }, {
+               "date_added": "13081404468695234",
+               "id": "44",
+               "name": "2D Shadow Effects",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://forums.tigsource.com/index.php?topic=8803.0"
+            }, {
+               "date_added": "13092722074029509",
+               "id": "45",
+               "name": "Using Lua with C++ (Part 1) | Elias Daler | Re:creation",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://eliasdaler.wordpress.com/2013/10/11/lua_cpp_binder/"
+            }, {
+               "date_added": "13100918388138179",
+               "id": "46",
+               "name": "http://llvm.org/devmtg/2012-04-12/Slides/Wayne_Palmer.pdf",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://llvm.org/devmtg/2012-04-12/Slides/Wayne_Palmer.pdf"
+            }, {
+               "date_added": "13102358522891000",
+               "id": "47",
+               "name": "Adding AngelScript scripting to your C++ application | Owl's Programming Snippets",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://damianpaz.wordpress.com/2012/04/30/adding-angelscript-scripting-to-your-c-application/"
+            }, {
+               "date_added": "13102365889721427",
+               "id": "48",
+               "name": "AngelCode - GameDev.net",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://www.gamedev.net/forum/49-angelcode/?prune_day=100&sort_by=Z-A&sort_key=last_post&topicfilter=all"
+            }, {
+               "date_added": "13104293955549516",
+               "id": "49",
+               "name": "Shunting Yard Algorithm - Intro and Reverse Polish Notation - YouTube",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=QzVVjboyb0s"
+            } ],
+            "date_added": "13174630980361103",
+            "date_modified": "13174630980361104",
+            "id": "24",
+            "meta_info": {
+               "stars.id": "ssf_0db5477ff4f0b897",
+               "stars.version": "sync.server.Chrome46"
+            },
+            "name": "Programing",
+            "sync_transaction_version": "3",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "12987528319341000",
+               "id": "34",
+               "name": "Royalty Free Music",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://incompetech.com/m/c/royalty-free/"
+            }, {
+               "date_added": "12987451921026000",
+               "id": "35",
+               "name": "Free Sound Clips  SoundBible",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://soundbible.com/"
+            }, {
+               "date_added": "12988523534299529",
+               "id": "36",
+               "name": "free 3d models",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://www.turbosquid.com/AssetManager/Index.cfm?stgAction=getFiles&subAction=Download&intID=168097&intType=3"
+            }, {
+               "date_added": "13081412753518081",
+               "id": "37",
+               "name": "Handpicked free fonts for graphic designers with commercial-use licenses. | Font Squirrel",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://www.fontsquirrel.com/"
+            } ],
+            "date_added": "13174630980361781",
+            "date_modified": "13174630980361782",
+            "id": "25",
+            "meta_info": {
+               "stars.id": "ssf_9403f3fafda111f0",
+               "stars.version": "sync.server.Chrome46"
+            },
+            "name": "Game Resources",
+            "sync_transaction_version": "3",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13089427258345593",
+               "id": "31",
+               "meta_info": {
+                  "last_visited_desktop": "13171508713734920"
+               },
+               "name": "my.ryerson | my.ryerson Portal",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://my.ryerson.ca/f/myryerson/normal/render.uP"
+            }, {
+               "date_added": "13087701281511737",
+               "id": "32",
+               "name": "Stewart Calculus: Early Transcendentals (9781285741550), Pg. 21 :: Homework Help and Answers :: Slader",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "http://www.slader.com/textbook/9781285741550-stewart-calculus-early-transcendentals-8th-edition/21/"
+            }, {
+               "date_added": "13170817591684606",
+               "id": "33",
+               "meta_info": {
+                  "last_visited_desktop": "13170817591684606"
+               },
+               "name": "Buy & Sell Online: PC Games, Software, Gift Cards and More at G2A.COM",
+               "sync_transaction_version": "3",
+               "type": "url",
+               "url": "https://www.g2a.com/"
+            } ],
+            "date_added": "13174630980362442",
+            "date_modified": "13174630980362442",
+            "id": "26",
+            "name": "School Stuff",
+            "sync_transaction_version": "3",
+            "type": "folder"
+         }, {
+            "date_added": "13109914955097247",
+            "id": "27",
+            "name": "Computer  Parts",
+            "sync_transaction_version": "15",
+            "type": "url",
+            "url": "http://ca.pcpartpicker.com/products/keyboard/#k=1&sort=a8&page=1"
+         }, {
+            "date_added": "13098648576967983",
+            "id": "28",
+            "name": "Electronic library. Download books free. Finding books",
+            "sync_transaction_version": "16",
+            "type": "url",
+            "url": "http://bookzz.org/"
+         }, {
+            "date_added": "13144455587326345",
+            "id": "29",
+            "name": "Free Sheet Piano Music - Free Printable Sheet Music for Piano Solo, for playing and studying.",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "http://www.freesheetpianomusic.com/"
+         }, {
+            "date_added": "13147300949031954",
+            "id": "30",
+            "name": "Raymond_Baker / home — Bitbucket",
+            "sync_transaction_version": "17",
+            "type": "url",
+            "url": "https://bitbucket.org/"
+         }, {
+            "date_added": "13102446886000000",
+            "id": "6",
+            "name": "Manjaro Wiki",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "https://wiki.manjaro.org/index.php?title=Main_Page"
+         }, {
+            "date_added": "13102446920000000",
+            "id": "7",
+            "name": "Manjaro Forum",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "https://forum.manjaro.org/"
+         } ],
+         "date_added": "13174605560122252",
+         "date_modified": "13147300949031954",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "sync_transaction_version": "3",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13072126238783000",
+            "id": "9",
+            "name": "seh.ycdsb.ca/teachers/VMandatori/MCV4U1/Ch 3/Chapter 3 Solutions.pdf",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "http://seh.ycdsb.ca/teachers/VMandatori/MCV4U1/Ch%203/Chapter%203%20Solutions.pdf"
+         }, {
+            "date_added": "13071021859430000",
+            "id": "10",
+            "name": "Road Test Booking Online",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "https://www.irtb.rus.mto.gov.on.ca/"
+         }, {
+            "date_added": "13069712568584000",
+            "id": "11",
+            "name": "Nelson Chemistry 12 - Online Teacher's Resource",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "http://science.rehoboth.on.ca/sch4u/book/"
+         }, {
+            "date_added": "13070584183125000",
+            "id": "12",
+            "name": "IndieGala Friday Special #11 Bundle of Steam games",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "https://www.indiegala.com/friday"
+         }, {
+            "date_added": "13086475360376299",
+            "id": "13",
+            "name": "Math Skills Diagnostic Test and Practice Modules | loss of generality",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "http://mathematica.lossofgenerality.com/2014/08/15/math-skills-tests/"
+         }, {
+            "date_added": "13069906685181000",
+            "id": "14",
+            "name": "How to link ENet",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "http://stackoverflow.com/questions/17635989/how-to-link-enet-and-msvc"
+         }, {
+            "date_added": "13076807790182914",
+            "id": "15",
+            "name": "Bookmarks",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "chrome://bookmarks/"
+         }, {
+            "date_added": "13078197902470000",
+            "id": "16",
+            "name": "[H] Steam keys (update) [W] Other games",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "http://www.steamgifts.com/trade/yx3Of/h-steam-keys-update-w-other-games"
+         }, {
+            "date_added": "13081405272251973",
+            "id": "17",
+            "name": "NeHe Productions - Everything OpenGL",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "http://nehe.gamedev.net/"
+         }, {
+            "date_added": "13069392830976739",
+            "id": "18",
+            "name": "TF2 Trading, Dota Trading, CS:GO Trading, Steam Trading and more! - Bazaar.tf",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "http://bazaar.tf/"
+         }, {
+            "date_added": "13081452868024988",
+            "id": "19",
+            "name": "Da Button Factory: online button maker",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "http://dabuttonfactory.com/"
+         } ],
+         "date_added": "13174605560122256",
+         "date_modified": "13086475360376299",
+         "id": "2",
+         "name": "Other bookmarks",
+         "sync_transaction_version": "3",
+         "type": "folder"
+      },
+      "sync_transaction_version": "17",
+      "synced": {
+         "children": [  ],
+         "date_added": "13174605560122257",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "sync_transaction_version": "3",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
