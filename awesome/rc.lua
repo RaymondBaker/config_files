@@ -64,7 +64,7 @@ awful.layout.layouts = {
     --awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
     -- awful.layout.suit.tile.top,
-    -- awful.layout.suit.fair,
+    awful.layout.suit.fair,
     -- awful.layout.suit.fair.horizontal,
     -- awful.layout.suit.spiral,
     -- awful.layout.suit.spiral.dwindle,
@@ -288,19 +288,19 @@ globalkeys = gears.table.join(
         function ()
             awful.client.focus.bydirection("up")
         end,
-        {description = "focus previous by index", group = "client"}
+        {description = "focus up", group = "client"}
     ),
     awful.key({ modkey,           }, "l",
         function ()
             awful.client.focus.bydirection("right")
         end,
-        {description = "focus previous by index", group = "client"}
+        {description = "focus right", group = "client"}
     ),
     awful.key({ modkey,           }, "h",
         function ()
             awful.client.focus.bydirection("left")
         end,
-        {description = "focus previous by index", group = "client"}
+        {description = "focus left", group = "client"}
     ),
 
 
@@ -310,13 +310,13 @@ globalkeys = gears.table.join(
 
     -- Window Movement
     awful.key({ modkey, "Control" }, "j", function () awful.client.swap.bydirection("down") end,
-              {description = "focus the previous screen", group = "screen"}),
+              {description = "focus the previous screen", group = "client"}),
     awful.key({ modkey, "Control" }, "k", function () awful.client.swap.bydirection("up") end,
-              {description = "focus the previous screen", group = "screen"}),
+              {description = "focus the previous screen", group = "client"}),
     awful.key({ modkey, "Control" }, "h", function () awful.client.swap.bydirection("left") end,
-              {description = "focus the previous screen", group = "screen"}),
+              {description = "focus the previous screen", group = "client"}),
     awful.key({ modkey, "Control" }, "l", function () awful.client.swap.bydirection("right") end,
-              {description = "focus the previous screen", group = "screen"}),
+              {description = "focus the previous screen", group = "client"}),
               
     -- Layout manipulation
     -- awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
@@ -352,9 +352,9 @@ globalkeys = gears.table.join(
               {description = "increase master width factor", group = "layout"}),
     awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incmwfact(-0.1)          end,
               {description = "decrease master width factor", group = "layout"}),
-    awful.key({ modkey, "Shift"   }, "j",     function () awful.client.incwfact(0.1)          end,
+    awful.key({ modkey, "Shift"   }, "j",     function () awful.client.incwfact(-0.1)          end,
               {description = "decrease client height factor", group = "layout"}),
-    awful.key({ modkey, "Shift"   }, "k",     function () awful.client.incwfact(-0.1)          end,
+    awful.key({ modkey, "Shift"   }, "k",     function () awful.client.incwfact(0.1)          end,
               {description = "increase client height factor", group = "layout"}),
     -- awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster( 1, nil, true) end,
     --           {description = "increase the number of master clients", group = "layout"}),
@@ -366,7 +366,7 @@ globalkeys = gears.table.join(
     --           {description = "decrease the number of columns", group = "layout"}),
     -- awful.key({ modkey,           }, "space", function () awful.util.spawn("/usr/bin/dmenu_recency")          end,
     --          {description = "launch dmenu", group = "launcher"}),
-    awful.key({ modkey, Shift     }, "b", function () awful.util.spawn("/usr/bin/chromium")          end,
+    awful.key({ modkey,           }, "b", function () awful.util.spawn("/usr/bin/chromium")          end,
               {description = "launch Browser", group = "launcher"}),
     awful.key({ modkey, "Shift"   }, "p", function () awful.util.spawn("/usr/bin/rofi -show")          end,
               {description = "launch rofi", group = "launcher"}),
@@ -374,6 +374,25 @@ globalkeys = gears.table.join(
               {description = "launch filemanager", group = "launcher"}),
     awful.key({ modkey,           }, "space", function () awful.layout.inc(-1)                end,
               {description = "select previous", group = "layout"}),
+
+    -- MUSIC CONTROL
+    -- {{
+    -- #171 is the button's keycode and can be found with xev
+    awful.key({                   }, "#171", function () awful.util.spawn("/usr/bin/cmus-remote -n")                end,
+              {description = "Next Song", group = "launcher"}),
+    awful.key({                   }, "#173", function () awful.util.spawn("/usr/bin/cmus-remote -r")                end,
+              {description = "Prev Song", group = "launcher"}),
+    awful.key({                   }, "#172", function () awful.util.spawn("/usr/bin/cmus-remote -u")                end,
+              {description = "Play/Pause Song", group = "launcher"}),
+    awful.key({                   }, "#174", function () awful.util.spawn("/usr/bin/cmus-remote -s")                end,
+              {description = "Stop Song", group = "launcher"}),
+
+    awful.key({"Shift"          }, "#171", function () awful.util.spawn("/usr/bin/cmus-remote -s")                end,
+              {description = "Seek Forward", group = "launcher"}),
+    awful.key({"Shift"          }, "#173", function () awful.util.spawn("/usr/bin/cmus-remote -s")                end,
+              {description = "Seek Backwards", group = "launcher"}),
+    -- }}
+
 
     awful.key({ modkey, "Control" }, "n",
               function ()

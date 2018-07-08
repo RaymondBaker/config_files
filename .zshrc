@@ -61,6 +61,17 @@ alias la='ls -la --color=tty'
 alias ll='ls -ltra --color=tty'
 alias cd..='cd ..'
 
+# Functions
+function trash()
+{
+    mv "$1" ~/.local/share/Trash/files/
+}
+
+function recover()
+{
+    mv ~/.local/share/Trash/files/"$1" ./
+}
+
 # Theming section  
 autoload -U compinit colors zcalc
 compinit -d
