@@ -57,7 +57,7 @@ alias df='df -h'                                                # Human-readable
 alias free='free -m'                                            # Show sizes in MB
 alias gitu='git add . && git commit && git push'
 alias ls='ls --color=tty'
-alias la='ls -a --color=tty'
+alias la='ls -la --color=tty'
 alias ll='ls -ltra --color=tty'
 alias cd..='cd ..'
 
