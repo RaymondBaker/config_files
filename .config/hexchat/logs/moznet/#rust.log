@@ -1,0 +1,92 @@
+**** BEGIN LOGGING AT Mon Jul  2 21:11:15 2018
+
+Jul 02 21:11:15 *	Now talking on #rust
+Jul 02 21:11:15 *	Topic for #rust is: Rust general discussion | Current release: 1.27.0 | Playground https://play.rust-lang.org/ | Forum https://users.rust-lang.org/ | New user channel: #rust-beginners | Conduct https://www.rust-lang.org/conduct.html | Logs https://mozilla.logbot.info/rust/ https://botbot.me/mozilla/rust
+Jul 02 21:11:15 *	Topic for #rust set by steveklabnik!root@moz-fft.uo8.55.45.IP (Thu Jun 21 16:19:33 2018)
+Jul 02 21:11:40 *	Licenser has quit (Ping timeout: 121 seconds)
+Jul 02 21:12:14 *	jschievink has quit (Ping timeout: 121 seconds)
+Jul 02 21:12:17 *	adokce has quit (Connection closed)
+Jul 02 21:12:31 *	adokce (adokce@moz-imr.pd5.221.77.IP) has joined
+Jul 02 21:12:59 *	jperras has quit (Ping timeout: 121 seconds)
+Jul 02 21:13:15 *	jrl has quit (Ping timeout: 121 seconds)
+Jul 02 21:13:48 *	Zoxc_ has quit (A TLS packet with unexpected length was received.)
+Jul 02 21:14:15 *	mosttime (mosttime@moz-506.gj1.223.58.IP) has joined
+Jul 02 21:15:49 *	ChaiTRex has quit (Ping timeout: 121 seconds)
+Jul 02 21:16:08 *	Licenser (textual@moz-5eh5kl.dip0.t-ipconnect.de) has joined
+Jul 02 21:16:10 *	durka42 has quit (Connection closed)
+Jul 02 21:16:23 *	jsatk has quit (Ping timeout: 121 seconds)
+Jul 02 21:17:02 *	mtak has quit (Client exited)
+Jul 02 21:17:14 *	ambuyat (ambuyat@moz-ggl.89f.160.202.IP) has joined
+Jul 02 21:17:16 *	feddasch (feddasch@moz-nij.59a.23.186.IP) has joined
+Jul 02 21:18:38 *	ChaiTRex (ChaiTRex@moz-f2u.fbr.15.4.IP) has joined
+Jul 02 21:19:04 *	durka42 (durka42@moz-2mv3b7.7mcr.k96e.f470.2607.IP) has joined
+Jul 02 21:19:58 *	Licenser_ (textual@moz-ll6bn6.dip0.t-ipconnect.de) has joined
+Jul 02 21:20:34 *	Licenser has quit (Ping timeout: 121 seconds)
+Jul 02 21:20:35 *	starblue1 (juergen@moz-ulqvio.pools.vodafone-ip.de) has joined
+Jul 02 21:22:25 *	starblue has quit (Ping timeout: 121 seconds)
+Jul 02 21:22:51 *	jperras (jperras@moz-ueb98j.dsl.bell.ca) has joined
+Jul 02 21:23:35 *	chao-tic has quit (Ping timeout: 121 seconds)
+Jul 02 21:24:07 *	jrmuizel (jrmuizel@moz-8ridna.cpe.pppoe.ca) has joined
+Jul 02 21:24:23 *	feddasch has quit (Quit: Leaving)
+Jul 02 21:25:28 *	governortarkin (governortar@moz-db0f1a.res.rr.com) has joined
+Jul 02 21:27:11 *	jsatk (jesseatkins@moz-48ft7k.ca.comcast.net) has joined
+Jul 02 21:28:15 <isHavvy>	Anybody have an example of using a block expression to force a value to be moved out of a variable?
+Jul 02 21:28:36 *	jsgf has quit (Ping timeout: 121 seconds)
+Jul 02 21:29:12 *	ecstaticm0rse has quit (Client exited)
+Jul 02 21:29:27 *	adokce has quit (Connection closed)
+Jul 02 21:29:31 *	standups has quit (A TLS packet with unexpected length was received.)
+Jul 02 21:30:18 *	blackgoat has quit (Quit: WeeChat 2.1)
+Jul 02 21:30:27 <ishitatsuyuki>	I don't think it's possible with block
+Jul 02 21:30:49 <ishitatsuyuki>	Maybe NLL is useful for you, maybe closure instead
+Jul 02 21:31:26 *	jsatk has quit (Ping timeout: 121 seconds)
+Jul 02 21:31:35 *	adokce (adokce@moz-imr.pd5.221.77.IP) has joined
+Jul 02 21:31:39 <isHavvy>	ishitatsuyuki: It's entirely possible. I just need a good example to show it. And not...
+Jul 02 21:31:51 <isHavvy>	http://play.rust-lang.org/?gist=82cabd6745f471640b56cd4d701e757c&version=stable&mode=debug&edition=2015
+Jul 02 21:32:13 *	jsatk (jesseatkins@moz-48ft7k.ca.comcast.net) has joined
+Jul 02 21:33:05 *	jazzpi has quit (Quit: ZNC - http://znc.in)
+Jul 02 21:33:15 *	standups (nodebot@moz-0ajav0.compute-1.amazonaws.com) has joined
+Jul 02 21:33:39 <isHavvy>	Mainly because println!() hides the fact it takes a reference...
+Jul 02 21:33:54 *	jazzpi (jazzpi@moz-201voq.mic3.r4i0.4000.2a03.IP) has joined
+Jul 02 21:34:37 <ishitatsuyuki>	Probably you are correct. What's your goal though?
+Jul 02 21:35:05 <isHavvy>	Decent example for the reference.
+Jul 02 21:35:06 <_habnabit>	isHavvy, http://play.rust-lang.org/?gist=b75ac0cea740fed11177e0dd527f3364&version=stable&mode=debug&edition=2015 ?
+Jul 02 21:35:48 *	mosttime has quit (Ping timeout: 121 seconds)
+Jul 02 21:36:43 <isHavvy>	_habnabit: That gets rid of the println, yes. :)
+Jul 02 21:37:12 <_habnabit>	isHavvy, kinda!!
+Jul 02 21:37:48 *	jsatk has quit (Ping timeout: 121 seconds)
+Jul 02 21:37:50 *	fabiand has quit (Ping timeout: 121 seconds)
+Jul 02 21:38:07 *	mosttime (mosttime@moz-506.gj1.223.58.IP) has joined
+Jul 02 21:38:37 <isHavvy>	http://play.rust-lang.org/?gist=b75ac0cea740fed11177e0dd527f3364
+Jul 02 21:38:41 <isHavvy>	Err
+Jul 02 21:38:59 <isHavvy>	Grr, it deleted what I did.
+Jul 02 21:39:39 <sinclair>	Mutabah: sorry, having some trouble understanding this GenericArray, are you able to provide some assistance?
+Jul 02 21:39:46 <isHavvy>	http://play.rust-lang.org/?gist=7206bb14c3e5609cf496a79c738ef381&version=stable&mode=debug&edition=2015
+Jul 02 21:40:22 <sinclair>	these crypto libraries take a dependency on a GenericArray, which is used to pass an initialization vector of "known" size
+Jul 02 21:40:42 *	safwan has quit (Quit: Connection closed for inactivity)
+Jul 02 21:40:56 <sinclair>	i have a IV which is currently of type [u8; 32], but not entirely sure how this should map to a generic array.
+Jul 02 21:42:22 <Mutabah>	No idea, sorry
+Jul 02 21:42:23 <Ralith>	there's a `from_slice` method or something like that
+Jul 02 21:42:24 *	mtak (mtak@moz-4ul83b.or.comcast.net) has joined
+Jul 02 21:42:48 *	samresendez has quit (Ping timeout: 121 seconds)
+Jul 02 21:43:03 <sinclair>	Ralith: on the GenericArray? that would make sense
+Jul 02 21:44:33 *	jsatk (jesseatkins@moz-48ft7k.ca.comcast.net) has joined
+Jul 02 21:44:52 *	orks has quit (Connection closed)
+Jul 02 21:46:36 *	samresendez (samresendez@moz-i7m.9o0.201.199.IP) has joined
+Jul 02 21:47:42 *	_macro has quit (Ping timeout: 121 seconds)
+Jul 02 21:50:26 *	fabiand (fabiand@moz-sctmqn.dip0.t-ipconnect.de) has joined
+Jul 02 21:50:33 *	jsatk has quit (Ping timeout: 121 seconds)
+Jul 02 21:50:46 *	samresendez has quit (Ping timeout: 121 seconds)
+Jul 02 21:50:57 *	durka42 has quit (Connection closed)
+Jul 02 21:51:23 *	durka42 (durka42@moz-9br.fn9.105.134.IP) has joined
+Jul 02 21:52:59 *	MaulingMonkey (monkey@moz-7ju5lf.wa.comcast.net) has joined
+**** BEGIN LOGGING AT Tue Jul  3 19:55:29 2018
+
+Jul 03 19:55:29 *	Now talking on #rust
+Jul 03 19:55:29 *	Topic for #rust is: Rust general discussion | Current release: 1.27.0 | Playground https://play.rust-lang.org/ | Forum https://users.rust-lang.org/ | New user channel: #rust-beginners | Conduct https://www.rust-lang.org/conduct.html | Logs https://mozilla.logbot.info/rust/ https://botbot.me/mozilla/rust
+Jul 03 19:55:29 *	Topic for #rust set by steveklabnik!root@moz-fft.uo8.55.45.IP (Thu Jun 21 16:19:33 2018)
+Jul 03 19:55:57 *	raymondsiu has quit (Client exited)
+Jul 03 19:55:58 *	raymondsiu (Thunderbird@moz-75b8t6.dsl.bell.ca) has joined
+Jul 03 19:56:12 *	Prince781_ (Prince781@moz-0tdnth.dyn.optonline.net) has joined
+Jul 03 19:56:37 *	iamwilliamwu has quit (Ping timeout: 121 seconds)
+**** ENDING LOGGING AT Tue Jul  3 19:56:51 2018
+

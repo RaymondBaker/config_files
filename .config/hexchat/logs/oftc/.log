@@ -1,0 +1,22 @@
+**** BEGIN LOGGING AT Mon Jul  2 20:04:09 2018
+
+Jul 02 20:04:09 *	Connecting to irc.geo.oftc.net (64.62.190.36:6697)
+Jul 02 20:04:10 *	* Certification info:
+Jul 02 20:04:10 *	  Subject:
+Jul 02 20:04:10 *	    CN=charm.oftc.net
+Jul 02 20:04:10 *	  Issuer:
+Jul 02 20:04:10 *	    C=US
+Jul 02 20:04:10 *	    O=Let's Encrypt
+Jul 02 20:04:10 *	    CN=Let's Encrypt Authority X3
+Jul 02 20:04:10 *	  Public key algorithm: rsaEncryption (2048 bits)
+Jul 02 20:04:10 *	  Sign algorithm sha256WithRSAEncryption
+Jul 02 20:04:10 *	  Valid since May  7 16:54:48 2018 GM to Aug  5 16:54:48 2018 GM
+Jul 02 20:04:10 *	* Cipher info:
+Jul 02 20:04:10 *	  Version: TLSv1.2, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jul 02 20:04:10 *	Connected. Now logging in.
+**** BEGIN LOGGING AT Mon Jul  2 21:12:38 2018
+
+Jul 02 21:12:38 *	raymond is already in use. Retrying with raymond_...
+Jul 02 21:12:38 *	raymond_ sets mode +i on raymond_
+**** ENDING LOGGING AT Mon Jul  2 21:12:39 2018
+

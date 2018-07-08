@@ -1,0 +1,21 @@
+**** BEGIN LOGGING AT Mon Jul  2 21:11:01 2018
+
+Jul 02 21:11:01 *	Connecting to irc.mozilla.org (54.85.60.193:6697)
+Jul 02 21:11:02 *	* Certification info:
+Jul 02 21:11:02 *	  Subject:
+Jul 02 21:11:02 *	    C=US
+Jul 02 21:11:02 *	    ST=California
+Jul 02 21:11:02 *	    L=Mountain View
+Jul 02 21:11:02 *	    O=Mozilla Foundation
+Jul 02 21:11:02 *	    OU=IT
+Jul 02 21:11:02 *	    CN=irc.mozilla.org
+Jul 02 21:11:02 *	  Issuer:
+Jul 02 21:11:02 *	    C=US
+Jul 02 21:11:02 *	    O=DigiCert Inc
+Jul 02 21:11:02 *	    CN=DigiCert SHA2 Secure Server CA
+Jul 02 21:11:02 *	  Public key algorithm: rsaEncryption (2048 bits)
+Jul 02 21:11:02 *	  Sign algorithm sha256WithRSAEncryption
+Jul 02 21:11:02 *	  Valid since Aug  9 00:00:00 2017 GM to Aug 13 12:00:00 2020 GM
+Jul 02 21:11:02 *	* Cipher info:
+Jul 02 21:11:02 *	  Version: TLSv1.2, cipher DHE-RSA-AES256-SHA256 (256 bits)
+Jul 02 21:11:02 *	Connected. Now logging in.

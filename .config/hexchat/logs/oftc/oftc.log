@@ -1,0 +1,384 @@
+**** BEGIN LOGGING AT Mon Jul  2 20:04:10 2018
+
+Jul 02 20:04:10 *	*** Looking up your hostname...
+Jul 02 20:04:10 *	*** Checking Ident
+Jul 02 20:04:10 *	*** Found your hostname
+Jul 02 20:04:20 *	*** No Ident response
+Jul 02 20:04:20 *	Capabilities supported: multi-prefix
+Jul 02 20:04:20 *	Capabilities requested: multi-prefix 
+Jul 02 20:04:20 *	Capabilities acknowledged: multi-prefix
+Jul 02 20:04:21 *	*** Connected securely via TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384-256
+**** ENDING LOGGING AT Mon Jul  2 20:04:21 2018
+
+**** BEGIN LOGGING AT Mon Jul  2 20:04:21 2018
+
+Jul 02 20:04:21 *	Welcome to the OFTC Internet Relay Chat Network raymond
+Jul 02 20:04:21 *	Your host is charm.oftc.net[64.62.190.36/6697], running version hybrid-7.2.2+oftc1.7.3
+Jul 02 20:04:21 *	This server was created Jun 23 2018 at 19:19:09
+Jul 02 20:04:21 *	charm.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+Jul 02 20:04:21 *	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+Jul 02 20:04:21 *	CHANLIMIT=#:90 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS ELIST=CMNTU SAFELIST AWAYLEN=160 KNOCK EXCEPTS=e INVEX=I :are supported by this server
+Jul 02 20:04:21 *	4JHAAADWG :your unique ID
+Jul 02 20:04:21 *	There are 29 users and 12519 invisible on 20 servers
+Jul 02 20:04:21 *	20 :IRC Operators online
+Jul 02 20:04:21 *	38 :unknown connection(s)
+Jul 02 20:04:21 *	2515 :channels formed
+Jul 02 20:04:21 *	I have 864 clients and 1 servers
+Jul 02 20:04:21 *	Current local users: 864  Max: 906
+Jul 02 20:04:21 *	Current global users: 12548  Max: 13373
+Jul 02 20:04:21 *	Highest connection count: 907 (906 clients) (4687 connections received)
+Jul 02 20:04:21 *	- charm.oftc.net Message of the Day - 
+Jul 02 20:04:21 *	-   O
+Jul 02 20:04:21 *	-    \   The Open and Free
+Jul 02 20:04:21 *	-     O
+Jul 02 20:04:21 *	-    /|  Technology Community
+Jul 02 20:04:21 *	- O-O O
+Jul 02 20:04:21 *	- 
+Jul 02 20:04:21 *	- Welcome to OFTC's IRC network.
+Jul 02 20:04:21 *	- 
+Jul 02 20:04:21 *	- The Open and Free Technology Community was founded at the
+Jul 02 20:04:21 *	- end of 2001 by a group of experienced members of the Open
+Jul 02 20:04:21 *	- Source and Free Software communities; it is aimed at
+Jul 02 20:04:21 *	- providing these communities with better communication,
+Jul 02 20:04:21 *	- development, and support infrastructure. Our goal is to
+Jul 02 20:04:21 *	- provide stable services to members of the community in any
+Jul 02 20:04:21 *	- part of the world, while listening closely to their needs
+Jul 02 20:04:21 *	- and desires.
+Jul 02 20:04:21 *	- 
+Jul 02 20:04:21 *	- We are not a general purpose chat platform, but a topical
+Jul 02 20:04:21 *	- network intent on providing the open source and free
+Jul 02 20:04:21 *	- software communities a means to cooperate and communicate.
+Jul 02 20:04:21 *	- As such, illegal and off-topic activity, such as warez
+Jul 02 20:04:21 *	- trading, may result in being barred from access.
+Jul 02 20:04:21 *	- 
+Jul 02 20:04:21 *	- OFTC honors your privacy. To operate the network, we store
+Jul 02 20:04:21 *	- and process information about IRC connections, nicknames,
+Jul 02 20:04:21 *	- and channels. Our Privacy Policy explains what we do with
+Jul 02 20:04:21 *	- that data, and what your rights are. By connecting, you
+Jul 02 20:04:21 *	- accept these terms: https://www.oftc.net/Privacy_Policy/
+Jul 02 20:04:21 *	- 
+Jul 02 20:04:21 *	- For more information on OFTC, please visit https://www.oftc.net/.
+Jul 02 20:04:21 *	- 
+Jul 02 20:04:21 *	- If you require assistance, stop by in channel #oftc, or email
+Jul 02 20:04:21 *	- support@oftc.net with details.
+Jul 02 20:04:21 *	- 
+Jul 02 20:04:21 *	- Thanks and enjoy your stay,
+Jul 02 20:04:21 *	- 
+Jul 02 20:04:21 *	-         The OFTC team
+Jul 02 20:04:21 *	End of /MOTD command.
+Jul 02 20:04:21 *	raymond sets mode +i on raymond
+**** BEGIN LOGGING AT Mon Jul  2 20:18:56 2018
+
+Jul 02 20:18:56 *	Welcome to the OFTC Internet Relay Chat Network raymond
+Jul 02 20:18:56 *	Your host is reflection.oftc.net[64.86.243.183/6697], running version hybrid-7.2.2+oftc1.7.3
+Jul 02 20:18:56 *	This server was created Jun 23 2018 at 19:18:10
+Jul 02 20:18:56 *	reflection.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+Jul 02 20:18:56 *	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+Jul 02 20:18:56 *	CHANLIMIT=#:90 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS AWAYLEN=160 KNOCK ELIST=CMNTU SAFELIST EXCEPTS=e INVEX=I :are supported by this server
+Jul 02 20:18:56 *	8L3AAADZQ :your unique ID
+Jul 02 20:18:56 *	There are 28 users and 12512 invisible on 20 servers
+Jul 02 20:18:56 *	20 :IRC Operators online
+Jul 02 20:18:56 *	37 :unknown connection(s)
+Jul 02 20:18:56 *	2512 :channels formed
+Jul 02 20:18:56 *	I have 895 clients and 1 servers
+Jul 02 20:18:56 *	Current local users: 895  Max: 939
+Jul 02 20:18:56 *	Current global users: 12540  Max: 13373
+Jul 02 20:18:56 *	Highest connection count: 940 (939 clients) (4805 connections received)
+Jul 02 20:18:56 *	- reflection.oftc.net Message of the Day - 
+Jul 02 20:18:56 *	-   O
+Jul 02 20:18:56 *	-    \   The Open and Free
+Jul 02 20:18:56 *	-     O
+Jul 02 20:18:56 *	-    /|  Technology Community
+Jul 02 20:18:56 *	- O-O O
+Jul 02 20:18:56 *	- 
+Jul 02 20:18:56 *	- Welcome to OFTC's IRC network.
+Jul 02 20:18:56 *	- 
+Jul 02 20:18:56 *	- The Open and Free Technology Community was founded at the
+Jul 02 20:18:56 *	- end of 2001 by a group of experienced members of the Open
+Jul 02 20:18:56 *	- Source and Free Software communities; it is aimed at
+Jul 02 20:18:56 *	- providing these communities with better communication,
+Jul 02 20:18:56 *	- development, and support infrastructure. Our goal is to
+Jul 02 20:18:56 *	- provide stable services to members of the community in any
+Jul 02 20:18:56 *	- part of the world, while listening closely to their needs
+Jul 02 20:18:56 *	- and desires.
+Jul 02 20:18:56 *	- 
+Jul 02 20:18:56 *	- We are not a general purpose chat platform, but a topical
+Jul 02 20:18:56 *	- network intent on providing the open source and free
+Jul 02 20:18:56 *	- software communities a means to cooperate and communicate.
+Jul 02 20:18:56 *	- As such, illegal and off-topic activity, such as warez
+Jul 02 20:18:56 *	- trading, may result in being barred from access.
+Jul 02 20:18:56 *	- 
+Jul 02 20:18:56 *	- OFTC honors your privacy. To operate the network, we store
+Jul 02 20:18:56 *	- and process information about IRC connections, nicknames,
+Jul 02 20:18:56 *	- and channels. Our Privacy Policy explains what we do with
+Jul 02 20:18:56 *	- that data, and what your rights are. By connecting, you
+Jul 02 20:18:56 *	- accept these terms: https://www.oftc.net/Privacy_Policy/
+Jul 02 20:18:56 *	- 
+Jul 02 20:18:56 *	- For more information on OFTC, please visit https://www.oftc.net/.
+Jul 02 20:18:56 *	- 
+Jul 02 20:18:56 *	- If you require assistance, stop by in channel #oftc, or email
+Jul 02 20:18:56 *	- support@oftc.net with details.
+Jul 02 20:18:56 *	- 
+Jul 02 20:18:56 *	- Thanks and enjoy your stay,
+Jul 02 20:18:56 *	- 
+Jul 02 20:18:56 *	-         The OFTC team
+Jul 02 20:18:56 *	End of /MOTD command.
+Jul 02 20:18:56 *	raymond sets mode +i on raymond
+**** BEGIN LOGGING AT Mon Jul  2 20:21:02 2018
+
+Jul 02 20:21:02 *	Welcome to the OFTC Internet Relay Chat Network raymond
+Jul 02 20:21:02 *	Your host is graviton.oftc.net[2607:f8f0:610:4000:216:fff:fe53:9005/6697], running version hybrid-7.2.2+oftc1.7.3
+Jul 02 20:21:02 *	This server was created Jun 23 2018 at 19:19:28
+Jul 02 20:21:02 *	graviton.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+Jul 02 20:21:02 *	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+Jul 02 20:21:02 *	CHANLIMIT=#:90 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS KNOCK ELIST=CMNTU SAFELIST AWAYLEN=160 EXCEPTS=e INVEX=I :are supported by this server
+Jul 02 20:21:02 *	7MPAAADTL :your unique ID
+Jul 02 20:21:02 *	There are 28 users and 12509 invisible on 20 servers
+Jul 02 20:21:02 *	20 :IRC Operators online
+Jul 02 20:21:02 *	43 :unknown connection(s)
+Jul 02 20:21:02 *	2512 :channels formed
+Jul 02 20:21:02 *	I have 966 clients and 1 servers
+Jul 02 20:21:02 *	Current local users: 966  Max: 1006
+Jul 02 20:21:02 *	Current global users: 12537  Max: 13373
+Jul 02 20:21:02 *	Highest connection count: 1007 (1006 clients) (4584 connections received)
+Jul 02 20:21:02 *	- graviton.oftc.net Message of the Day - 
+Jul 02 20:21:02 *	-   O
+Jul 02 20:21:02 *	-    \   The Open and Free
+Jul 02 20:21:02 *	-     O
+Jul 02 20:21:02 *	-    /|  Technology Community
+Jul 02 20:21:02 *	- O-O O
+Jul 02 20:21:02 *	- 
+Jul 02 20:21:02 *	- Welcome to OFTC's IRC network.
+Jul 02 20:21:02 *	- 
+Jul 02 20:21:02 *	- The Open and Free Technology Community was founded at the
+Jul 02 20:21:02 *	- end of 2001 by a group of experienced members of the Open
+Jul 02 20:21:02 *	- Source and Free Software communities; it is aimed at
+Jul 02 20:21:02 *	- providing these communities with better communication,
+Jul 02 20:21:02 *	- development, and support infrastructure. Our goal is to
+Jul 02 20:21:02 *	- provide stable services to members of the community in any
+Jul 02 20:21:02 *	- part of the world, while listening closely to their needs
+Jul 02 20:21:02 *	- and desires.
+Jul 02 20:21:02 *	- 
+Jul 02 20:21:02 *	- We are not a general purpose chat platform, but a topical
+Jul 02 20:21:02 *	- network intent on providing the open source and free
+Jul 02 20:21:02 *	- software communities a means to cooperate and communicate.
+Jul 02 20:21:02 *	- As such, illegal and off-topic activity, such as warez
+Jul 02 20:21:02 *	- trading, may result in being barred from access.
+Jul 02 20:21:02 *	- 
+Jul 02 20:21:02 *	- OFTC honors your privacy. To operate the network, we store
+Jul 02 20:21:02 *	- and process information about IRC connections, nicknames,
+Jul 02 20:21:02 *	- and channels. Our Privacy Policy explains what we do with
+Jul 02 20:21:02 *	- that data, and what your rights are. By connecting, you
+Jul 02 20:21:02 *	- accept these terms: https://www.oftc.net/Privacy_Policy/
+Jul 02 20:21:02 *	- 
+Jul 02 20:21:02 *	- For more information on OFTC, please visit https://www.oftc.net/.
+Jul 02 20:21:02 *	- 
+Jul 02 20:21:02 *	- If you require assistance, stop by in channel #oftc, or email
+Jul 02 20:21:02 *	- support@oftc.net with details.
+Jul 02 20:21:02 *	- 
+Jul 02 20:21:02 *	- Thanks and enjoy your stay,
+Jul 02 20:21:02 *	- 
+Jul 02 20:21:02 *	-         The OFTC team
+Jul 02 20:21:02 *	End of /MOTD command.
+Jul 02 20:21:02 *	raymond sets mode +i on raymond
+**** BEGIN LOGGING AT Mon Jul  2 20:46:59 2018
+
+Jul 02 20:46:59 *	Welcome to the OFTC Internet Relay Chat Network raymond
+Jul 02 20:46:59 *	Your host is graviton.oftc.net[2607:f8f0:610:4000:216:fff:fe53:9005/6697], running version hybrid-7.2.2+oftc1.7.3
+Jul 02 20:46:59 *	This server was created Jun 23 2018 at 19:19:28
+Jul 02 20:46:59 *	graviton.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+Jul 02 20:46:59 *	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+Jul 02 20:46:59 *	CHANLIMIT=#:90 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS KNOCK ELIST=CMNTU SAFELIST AWAYLEN=160 EXCEPTS=e INVEX=I :are supported by this server
+Jul 02 20:46:59 *	7MPAAADTY :your unique ID
+Jul 02 20:46:59 *	There are 25 users and 12509 invisible on 20 servers
+Jul 02 20:46:59 *	20 :IRC Operators online
+Jul 02 20:46:59 *	36 :unknown connection(s)
+Jul 02 20:46:59 *	2515 :channels formed
+Jul 02 20:46:59 *	I have 970 clients and 1 servers
+Jul 02 20:46:59 *	Current local users: 970  Max: 1006
+Jul 02 20:46:59 *	Current global users: 12534  Max: 13373
+Jul 02 20:46:59 *	Highest connection count: 1007 (1006 clients) (4597 connections received)
+Jul 02 20:46:59 *	- graviton.oftc.net Message of the Day - 
+Jul 02 20:46:59 *	-   O
+Jul 02 20:46:59 *	-    \   The Open and Free
+Jul 02 20:46:59 *	-     O
+Jul 02 20:46:59 *	-    /|  Technology Community
+Jul 02 20:46:59 *	- O-O O
+Jul 02 20:46:59 *	- 
+Jul 02 20:46:59 *	- Welcome to OFTC's IRC network.
+Jul 02 20:46:59 *	- 
+Jul 02 20:46:59 *	- The Open and Free Technology Community was founded at the
+Jul 02 20:46:59 *	- end of 2001 by a group of experienced members of the Open
+Jul 02 20:46:59 *	- Source and Free Software communities; it is aimed at
+Jul 02 20:46:59 *	- providing these communities with better communication,
+Jul 02 20:46:59 *	- development, and support infrastructure. Our goal is to
+Jul 02 20:46:59 *	- provide stable services to members of the community in any
+Jul 02 20:46:59 *	- part of the world, while listening closely to their needs
+Jul 02 20:46:59 *	- and desires.
+Jul 02 20:46:59 *	- 
+Jul 02 20:46:59 *	- We are not a general purpose chat platform, but a topical
+Jul 02 20:46:59 *	- network intent on providing the open source and free
+Jul 02 20:46:59 *	- software communities a means to cooperate and communicate.
+Jul 02 20:46:59 *	- As such, illegal and off-topic activity, such as warez
+Jul 02 20:46:59 *	- trading, may result in being barred from access.
+Jul 02 20:46:59 *	- 
+Jul 02 20:46:59 *	- OFTC honors your privacy. To operate the network, we store
+Jul 02 20:46:59 *	- and process information about IRC connections, nicknames,
+Jul 02 20:46:59 *	- and channels. Our Privacy Policy explains what we do with
+Jul 02 20:46:59 *	- that data, and what your rights are. By connecting, you
+Jul 02 20:46:59 *	- accept these terms: https://www.oftc.net/Privacy_Policy/
+Jul 02 20:46:59 *	- 
+Jul 02 20:46:59 *	- For more information on OFTC, please visit https://www.oftc.net/.
+Jul 02 20:46:59 *	- 
+Jul 02 20:46:59 *	- If you require assistance, stop by in channel #oftc, or email
+Jul 02 20:46:59 *	- support@oftc.net with details.
+Jul 02 20:46:59 *	- 
+Jul 02 20:46:59 *	- Thanks and enjoy your stay,
+Jul 02 20:46:59 *	- 
+Jul 02 20:46:59 *	-         The OFTC team
+Jul 02 20:46:59 *	End of /MOTD command.
+Jul 02 20:46:59 *	raymond sets mode +i on raymond
+Jul 02 21:12:16 *	No ping reply for 89 seconds, disconnecting.
+Jul 02 21:12:16 *	Disconnected ()
+Jul 02 21:12:26 *	Looking up irc.oftc.net
+Jul 02 21:12:27 *	Connecting to irc.geo.oftc.net (206.12.19.242:6697)
+Jul 02 21:12:27 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jul 02 21:12:27 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jul 02 21:12:27 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jul 02 21:12:27 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jul 02 21:12:27 *	* Subject: /CN=graviton.oftc.net
+Jul 02 21:12:27 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jul 02 21:12:28 *	* Certification info:
+Jul 02 21:12:28 *	  Subject:
+Jul 02 21:12:28 *	    CN=graviton.oftc.net
+Jul 02 21:12:28 *	  Issuer:
+Jul 02 21:12:28 *	    C=US
+Jul 02 21:12:28 *	    O=Let's Encrypt
+Jul 02 21:12:28 *	    CN=Let's Encrypt Authority X3
+Jul 02 21:12:28 *	  Public key algorithm: rsaEncryption (2048 bits)
+Jul 02 21:12:28 *	  Sign algorithm sha256WithRSAEncryption
+Jul 02 21:12:28 *	  Valid since May  7 16:55:07 2018 GM to Aug  5 16:55:07 2018 GM
+Jul 02 21:12:28 *	* Cipher info:
+Jul 02 21:12:28 *	  Version: TLSv1.2, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jul 02 21:12:28 *	Connected. Now logging in.
+Jul 02 21:12:28 *	*** Looking up your hostname...
+Jul 02 21:12:28 *	*** Checking Ident
+Jul 02 21:12:28 *	*** Found your hostname
+Jul 02 21:12:38 *	*** No Ident response
+Jul 02 21:12:38 *	Capabilities supported: multi-prefix
+Jul 02 21:12:38 *	Capabilities requested: multi-prefix 
+Jul 02 21:12:38 *	Capabilities acknowledged: multi-prefix
+Jul 02 21:12:38 *	*** Connected securely via TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384-256
+Jul 02 21:12:38 *	Welcome to the OFTC Internet Relay Chat Network raymond_
+Jul 02 21:12:38 *	Your host is graviton.oftc.net[206.12.19.242/6697], running version hybrid-7.2.2+oftc1.7.3
+Jul 02 21:12:38 *	This server was created Jun 23 2018 at 19:19:28
+Jul 02 21:12:38 *	graviton.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+Jul 02 21:12:38 *	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+Jul 02 21:12:38 *	CHANLIMIT=#:90 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS KNOCK ELIST=CMNTU SAFELIST AWAYLEN=160 EXCEPTS=e INVEX=I :are supported by this server
+Jul 02 21:12:38 *	7MPAAADT8 :your unique ID
+Jul 02 21:12:38 *	There are 26 users and 12494 invisible on 20 servers
+Jul 02 21:12:38 *	20 :IRC Operators online
+Jul 02 21:12:38 *	51 :unknown connection(s)
+Jul 02 21:12:38 *	2517 :channels formed
+Jul 02 21:12:38 *	I have 969 clients and 1 servers
+Jul 02 21:12:38 *	Current local users: 969  Max: 1006
+Jul 02 21:12:38 *	Current global users: 12520  Max: 13373
+Jul 02 21:12:38 *	Highest connection count: 1007 (1006 clients) (4607 connections received)
+Jul 02 21:12:38 *	- graviton.oftc.net Message of the Day - 
+Jul 02 21:12:38 *	-   O
+Jul 02 21:12:38 *	-    \   The Open and Free
+Jul 02 21:12:38 *	-     O
+Jul 02 21:12:38 *	-    /|  Technology Community
+Jul 02 21:12:38 *	- O-O O
+Jul 02 21:12:38 *	- 
+Jul 02 21:12:38 *	- Welcome to OFTC's IRC network.
+Jul 02 21:12:38 *	- 
+Jul 02 21:12:38 *	- The Open and Free Technology Community was founded at the
+Jul 02 21:12:38 *	- end of 2001 by a group of experienced members of the Open
+Jul 02 21:12:38 *	- Source and Free Software communities; it is aimed at
+Jul 02 21:12:38 *	- providing these communities with better communication,
+Jul 02 21:12:38 *	- development, and support infrastructure. Our goal is to
+Jul 02 21:12:38 *	- provide stable services to members of the community in any
+Jul 02 21:12:38 *	- part of the world, while listening closely to their needs
+Jul 02 21:12:38 *	- and desires.
+Jul 02 21:12:38 *	- 
+Jul 02 21:12:38 *	- We are not a general purpose chat platform, but a topical
+Jul 02 21:12:38 *	- network intent on providing the open source and free
+Jul 02 21:12:38 *	- software communities a means to cooperate and communicate.
+Jul 02 21:12:38 *	- As such, illegal and off-topic activity, such as warez
+Jul 02 21:12:38 *	- trading, may result in being barred from access.
+Jul 02 21:12:38 *	- 
+Jul 02 21:12:38 *	- OFTC honors your privacy. To operate the network, we store
+Jul 02 21:12:38 *	- and process information about IRC connections, nicknames,
+Jul 02 21:12:38 *	- and channels. Our Privacy Policy explains what we do with
+Jul 02 21:12:38 *	- that data, and what your rights are. By connecting, you
+Jul 02 21:12:38 *	- accept these terms: https://www.oftc.net/Privacy_Policy/
+Jul 02 21:12:38 *	- 
+Jul 02 21:12:38 *	- For more information on OFTC, please visit https://www.oftc.net/.
+Jul 02 21:12:38 *	- 
+Jul 02 21:12:38 *	- If you require assistance, stop by in channel #oftc, or email
+Jul 02 21:12:38 *	- support@oftc.net with details.
+Jul 02 21:12:38 *	- 
+Jul 02 21:12:38 *	- Thanks and enjoy your stay,
+Jul 02 21:12:38 *	- 
+Jul 02 21:12:38 *	-         The OFTC team
+Jul 02 21:12:38 *	End of /MOTD command.
+**** BEGIN LOGGING AT Tue Jul  3 19:56:15 2018
+
+Jul 03 19:56:15 *	Welcome to the OFTC Internet Relay Chat Network raymond
+Jul 03 19:56:15 *	Your host is graviton.oftc.net[2607:f8f0:610:4000:216:fff:fe53:9005/6697], running version hybrid-7.2.2+oftc1.7.3
+Jul 03 19:56:15 *	This server was created Jun 23 2018 at 19:19:28
+Jul 03 19:56:15 *	graviton.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+Jul 03 19:56:15 *	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+Jul 03 19:56:15 *	CHANLIMIT=#:90 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS KNOCK ELIST=CMNTU SAFELIST AWAYLEN=160 EXCEPTS=e INVEX=I :are supported by this server
+Jul 03 19:56:15 *	7MPAAAEDW :your unique ID
+Jul 03 19:56:15 *	There are 25 users and 12546 invisible on 20 servers
+Jul 03 19:56:15 *	19 :IRC Operators online
+Jul 03 19:56:15 *	41 :unknown connection(s)
+Jul 03 19:56:15 *	2513 :channels formed
+Jul 03 19:56:15 *	I have 950 clients and 1 servers
+Jul 03 19:56:15 *	Current local users: 950  Max: 1006
+Jul 03 19:56:15 *	Current global users: 12571  Max: 13373
+Jul 03 19:56:15 *	Highest connection count: 1007 (1006 clients) (5315 connections received)
+Jul 03 19:56:15 *	- graviton.oftc.net Message of the Day - 
+Jul 03 19:56:15 *	-   O
+Jul 03 19:56:15 *	-    \   The Open and Free
+Jul 03 19:56:15 *	-     O
+Jul 03 19:56:15 *	-    /|  Technology Community
+Jul 03 19:56:15 *	- O-O O
+Jul 03 19:56:15 *	- 
+Jul 03 19:56:15 *	- Welcome to OFTC's IRC network.
+Jul 03 19:56:15 *	- 
+Jul 03 19:56:15 *	- The Open and Free Technology Community was founded at the
+Jul 03 19:56:15 *	- end of 2001 by a group of experienced members of the Open
+Jul 03 19:56:15 *	- Source and Free Software communities; it is aimed at
+Jul 03 19:56:15 *	- providing these communities with better communication,
+Jul 03 19:56:15 *	- development, and support infrastructure. Our goal is to
+Jul 03 19:56:15 *	- provide stable services to members of the community in any
+Jul 03 19:56:15 *	- part of the world, while listening closely to their needs
+Jul 03 19:56:15 *	- and desires.
+Jul 03 19:56:15 *	- 
+Jul 03 19:56:15 *	- We are not a general purpose chat platform, but a topical
+Jul 03 19:56:15 *	- network intent on providing the open source and free
+Jul 03 19:56:15 *	- software communities a means to cooperate and communicate.
+Jul 03 19:56:15 *	- As such, illegal and off-topic activity, such as warez
+Jul 03 19:56:15 *	- trading, may result in being barred from access.
+Jul 03 19:56:15 *	- 
+Jul 03 19:56:15 *	- OFTC honors your privacy. To operate the network, we store
+Jul 03 19:56:15 *	- and process information about IRC connections, nicknames,
+Jul 03 19:56:15 *	- and channels. Our Privacy Policy explains what we do with
+Jul 03 19:56:15 *	- that data, and what your rights are. By connecting, you
+Jul 03 19:56:15 *	- accept these terms: https://www.oftc.net/Privacy_Policy/
+Jul 03 19:56:15 *	- 
+Jul 03 19:56:15 *	- For more information on OFTC, please visit https://www.oftc.net/.
+Jul 03 19:56:15 *	- 
+Jul 03 19:56:15 *	- If you require assistance, stop by in channel #oftc, or email
+Jul 03 19:56:15 *	- support@oftc.net with details.
+Jul 03 19:56:15 *	- 
+Jul 03 19:56:15 *	- Thanks and enjoy your stay,
+Jul 03 19:56:15 *	- 
+Jul 03 19:56:15 *	-         The OFTC team
+Jul 03 19:56:15 *	End of /MOTD command.
+Jul 03 19:56:15 *	raymond sets mode +i on raymond
+**** ENDING LOGGING AT Tue Jul  3 19:56:51 2018
+

@@ -1,0 +1,197 @@
+**** BEGIN LOGGING AT Mon Jul  2 21:04:37 2018
+
+Jul 02 21:04:37 *	*** Looking up your hostname...
+Jul 02 21:04:37 *	*** Checking Ident
+Jul 02 21:04:37 *	*** Couldn't look up your hostname
+Jul 02 21:04:45 *	*** No Ident response
+Jul 02 21:04:45 *	Capabilities supported: account-notify extended-join identify-msg multi-prefix sasl
+Jul 02 21:04:45 *	Capabilities requested: account-notify extended-join identify-msg multi-prefix 
+Jul 02 21:04:45 *	raymond is already in use. Retrying with raymond_...
+Jul 02 21:04:45 *	Capabilities acknowledged: account-notify extended-join identify-msg multi-prefix 
+**** ENDING LOGGING AT Mon Jul  2 21:04:45 2018
+
+**** BEGIN LOGGING AT Mon Jul  2 21:04:45 2018
+
+Jul 02 21:04:45 *	Welcome to the freenode Internet Relay Chat Network raymond_
+Jul 02 21:04:45 *	Your host is rajaniemi.freenode.net[2001:708:40:2001::f5ee:d0de/6697], running version ircd-seven-1.1.5
+Jul 02 21:04:45 *	This server was created Fri Feb 23 2018 at 21:28:24 UTC
+Jul 02 21:04:45 *	rajaniemi.freenode.net ircd-seven-1.1.5 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+Jul 02 21:04:45 *	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+Jul 02 21:04:45 *	CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+Jul 02 21:04:45 *	EXTBAN=$,ajrxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+Jul 02 21:04:45 *	There are 116 users and 86122 invisible on 34 servers
+Jul 02 21:04:45 *	30 :IRC Operators online
+Jul 02 21:04:45 *	10 :unknown connection(s)
+Jul 02 21:04:45 *	49303 :channels formed
+Jul 02 21:04:45 *	I have 4355 clients and 1 servers
+Jul 02 21:04:45 *	4355 6008 :Current local users 4355, max 6008
+Jul 02 21:04:45 *	86238 96965 :Current global users 86238, max 96965
+Jul 02 21:04:45 *	Highest connection count: 6009 (6008 clients) (539851 connections received)
+Jul 02 21:04:45 *	- rajaniemi.freenode.net Message of the Day - 
+Jul 02 21:04:45 *	- Welcome to rajaniemi.freenode.net in Helsinki, Finland.  Our thanks to
+Jul 02 21:04:45 *	- Aalto University for sponsoring this server!
+Jul 02 21:04:45 *	-  
+Jul 02 21:04:45 *	- RAJANIEMI, Hannu  (1978-). Born in Ylivieska, Finland, Rajaniemi is the
+Jul 02 21:04:45 *	- author of two novels and several short stories, and his debut novel 'The
+Jul 02 21:04:45 *	- Quantum Thief' was nominated for the 2011 Locus Award for Best First
+Jul 02 21:04:45 *	- Novel.  Rajaniemi lives in Edinburgh, Scotland where he is founding
+Jul 02 21:04:45 *	- director of ThinkTank Maths, a commercial research organisation.
+Jul 02 21:04:45 *	-  
+Jul 02 21:04:45 *	-  
+Jul 02 21:04:45 *	- Welcome to freenode - supporting the free and open source
+Jul 02 21:04:45 *	- software communities since 1998.
+Jul 02 21:04:45 *	-  
+Jul 02 21:04:45 *	- By connecting to freenode you indicate that you have read and
+Jul 02 21:04:45 *	- accept our policies and guidelines as set out on https://freenode.net
+Jul 02 21:04:45 *	-  
+Jul 02 21:04:45 *	- In the event that you observe behaviour that contravenes our policies,
+Jul 02 21:04:45 *	- please notify a volunteer staff member via private message, or send us an
+Jul 02 21:04:45 *	- e-mail to complaints@freenode.net -- we will do our best to address the
+Jul 02 21:04:45 *	- situation within a reasonable period of time, and we may request further
+Jul 02 21:04:45 *	- information or, as appropriate, involve other parties such as channel operators 
+Jul 02 21:04:45 *	- Group Contacts representing an on-topic group.
+Jul 02 21:04:45 *	-  
+Jul 02 21:04:45 *	- freenode runs an open proxy scanner.
+Jul 02 21:04:45 *	-  
+Jul 02 21:04:45 *	- If you are looking for assistance, you will be able to find a list of
+Jul 02 21:04:45 *	- volunteer staff using the '/who freenode/staff/*' command, and you may
+Jul 02 21:04:45 *	- message any of us at any time. Please note that freenode predominantly
+Jul 02 21:04:45 *	- provides assistance via private message, and while we have a network
+Jul 02 21:04:45 *	- channel the primary venue for support requests is via private message to
+Jul 02 21:04:45 *	- a member of the volunteer staff team.
+Jul 02 21:04:45 *	-  
+Jul 02 21:04:45 *	- From time to time, volunteer staff may send server-wide notices relating to
+Jul 02 21:04:45 *	- the project, or the communities that we host. The majority of such notices
+Jul 02 21:04:45 *	- will be sent as wallops, and you can '/mode <yournick> +w' to ensure that you
+Jul 02 21:04:45 *	- do not miss them. Important messages relating to the freenode project, including
+Jul 02 21:04:45 *	- notices of upcoming maintenance and other scheduled downtime will be issued as
+Jul 02 21:04:45 *	- global notices.
+Jul 02 21:04:45 *	-  
+Jul 02 21:04:45 *	- Representing an on-topic project? Don't forget to register, more information
+Jul 02 21:04:45 *	- can be found on the https://freenode.net website under "Group Registration".
+Jul 02 21:04:45 *	-  
+Jul 02 21:04:45 *	- freenode organises an annual conference, and we would like to extend our
+Jul 02 21:04:45 *	- thanks to the attendees, exhibitors and speakers who made freenode #live 2017
+Jul 02 21:04:45 *	- possible. And of course, our generous sponsors: Bytemark, Canonical (Ubuntu),
+Jul 02 21:04:45 *	- Falanx Cyber Security, Private Internet Access and Yubico for footing the bill.
+Jul 02 21:04:45 *	-  
+Jul 02 21:04:45 *	- Thank you also to our server sponsors for the sustained support in keeping the
+Jul 02 21:04:45 *	- network going for close to two decades.
+Jul 02 21:04:45 *	-  
+Jul 02 21:04:45 *	- freenode #live returns to Bristol, UK on November 3rd-4th 2018. Our Call for
+Jul 02 21:04:45 *	- Proposals is live at https://freenode.live and open until July 31, 2018. If 
+Jul 02 21:04:45 *	- you are interested in sponsoring this event, please send an e-mail to
+Jul 02 21:04:45 *	- sponsor@freenode.live
+Jul 02 21:04:45 *	-  
+Jul 02 21:04:45 *	- Thank you for using freenode!
+Jul 02 21:04:45 *	-  
+Jul 02 21:04:45 *	-  
+Jul 02 21:04:45 *	End of /MOTD command.
+Jul 02 21:04:45 *	raymond_ sets mode +Z on raymond_
+Jul 02 21:04:45 *	raymond_ sets mode +i on raymond_
+Jul 02 21:04:46 -NickServ-	This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+Jul 02 21:12:16 *	No ping reply for 88 seconds, disconnecting.
+Jul 02 21:12:16 *	Disconnected ()
+Jul 02 21:12:26 *	Looking up chat.freenode.net
+Jul 02 21:12:27 *	Connecting to chat.freenode.net (130.239.18.119:6697)
+Jul 02 21:12:27 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jul 02 21:12:27 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jul 02 21:12:27 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jul 02 21:12:27 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Jul 02 21:12:27 *	* Subject: /CN=leguin.freenode.net
+Jul 02 21:12:27 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Jul 02 21:12:29 *	* Certification info:
+Jul 02 21:12:29 *	  Subject:
+Jul 02 21:12:29 *	    CN=leguin.freenode.net
+Jul 02 21:12:29 *	  Issuer:
+Jul 02 21:12:29 *	    C=US
+Jul 02 21:12:29 *	    O=Let's Encrypt
+Jul 02 21:12:29 *	    CN=Let's Encrypt Authority X3
+Jul 02 21:12:29 *	  Public key algorithm: rsaEncryption (4096 bits)
+Jul 02 21:12:29 *	  Sign algorithm sha256WithRSAEncryption
+Jul 02 21:12:29 *	  Valid since Jun 11 05:01:51 2018 GM to Sep  9 05:01:51 2018 GM
+Jul 02 21:12:29 *	* Cipher info:
+Jul 02 21:12:29 *	  Version: TLSv1.2, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Jul 02 21:12:29 *	Connected. Now logging in.
+Jul 02 21:12:29 *	*** Looking up your hostname...
+Jul 02 21:12:29 *	*** Checking Ident
+Jul 02 21:12:29 *	*** Found your hostname
+Jul 02 21:12:36 *	*** No Ident response
+Jul 02 21:12:36 *	Capabilities supported: account-notify extended-join identify-msg multi-prefix sasl
+Jul 02 21:12:36 *	Capabilities requested: account-notify extended-join identify-msg multi-prefix 
+Jul 02 21:12:36 *	Capabilities acknowledged: account-notify extended-join identify-msg multi-prefix 
+Jul 02 21:12:37 *	Welcome to the freenode Internet Relay Chat Network raymond__
+Jul 02 21:12:37 *	Your host is leguin.freenode.net[130.239.18.119/6697], running version ircd-seven-1.1.7
+Jul 02 21:12:37 *	This server was created Sun May 20 2018 at 18:37:46 UTC
+Jul 02 21:12:37 *	leguin.freenode.net ircd-seven-1.1.7 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+Jul 02 21:12:37 *	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+Jul 02 21:12:37 *	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 CPRIVMSG CNOTICE KNOCK :are supported by this server
+Jul 02 21:12:37 *	ETRACE SAFELIST ELIST=CTU WHOX :are supported by this server
+Jul 02 21:12:37 *	There are 116 users and 86104 invisible on 34 servers
+Jul 02 21:12:37 *	30 :IRC Operators online
+Jul 02 21:12:37 *	9 :unknown connection(s)
+Jul 02 21:12:38 *	49297 :channels formed
+Jul 02 21:12:38 *	I have 4328 clients and 1 servers
+Jul 02 21:12:38 *	4328 5220 :Current local users 4328, max 5220
+Jul 02 21:12:38 *	86220 93662 :Current global users 86220, max 93662
+Jul 02 21:12:38 *	Highest connection count: 5221 (5220 clients) (284650 connections received)
+Jul 02 21:12:38 *	- leguin.freenode.net Message of the Day - 
+Jul 02 21:12:38 *	- Welcome to leguin.freenode.net in Umeå, Sweden, EU! Thanks to
+Jul 02 21:12:38 *	- the Academic Computer Club at Umeå University for sponsoring
+Jul 02 21:12:38 *	- this server!
+Jul 02 21:12:38 *	-  
+Jul 02 21:12:38 *	- LE GUIN, URSULA K. (1929-2018) Born in Berkeley, California,
+Jul 02 21:12:38 *	- Ursula Le Guin was an American author primarily known for
+Jul 02 21:12:38 *	- her Science Fiction and Fantasy. She was awarded the Hugo
+Jul 02 21:12:38 *	- and Nebula awards, and was best known for her Earthsea
+Jul 02 21:12:38 *	- and Hainish series.
+Jul 02 21:12:38 *	-  
+Jul 02 21:12:38 *	- Welcome to freenode - supporting the free and open source
+Jul 02 21:12:38 *	- software communities since 1998.
+Jul 02 21:12:38 *	-  
+Jul 02 21:12:38 *	- By connecting to freenode you indicate that you have read and
+Jul 02 21:12:38 *	- accept our policies and guidelines as set out on https://freenode.net
+Jul 02 21:12:38 *	-  
+Jul 02 21:12:38 *	- In the event that you observe behaviour that contravenes our policies,
+Jul 02 21:12:38 *	- please notify a volunteer staff member via private message, or send us an
+Jul 02 21:12:38 *	- e-mail to complaints@freenode.net -- we will do our best to address the
+Jul 02 21:12:38 *	- situation within a reasonable period of time, and we may request further
+Jul 02 21:12:38 *	- information or, as appropriate, involve other parties such as channel operators 
+Jul 02 21:12:38 *	- Group Contacts representing an on-topic group.
+Jul 02 21:12:38 *	-  
+Jul 02 21:12:38 *	- freenode runs an open proxy scanner.
+Jul 02 21:12:38 *	-  
+Jul 02 21:12:38 *	- If you are looking for assistance, you will be able to find a list of
+Jul 02 21:12:38 *	- volunteer staff using the '/who freenode/staff/*' command, and you may
+Jul 02 21:12:38 *	- message any of us at any time. Please note that freenode predominantly
+Jul 02 21:12:38 *	- provides assistance via private message, and while we have a network
+Jul 02 21:12:38 *	- channel the primary venue for support requests is via private message to
+Jul 02 21:12:38 *	- a member of the volunteer staff team.
+Jul 02 21:12:38 *	-  
+Jul 02 21:12:38 *	- From time to time, volunteer staff may send server-wide notices relating to
+Jul 02 21:12:38 *	- the project, or the communities that we host. The majority of such notices
+Jul 02 21:12:38 *	- will be sent as wallops, and you can '/mode <yournick> +w' to ensure that you
+Jul 02 21:12:38 *	- do not miss them. Important messages relating to the freenode project, including
+Jul 02 21:12:38 *	- notices of upcoming maintenance and other scheduled downtime will be issued as
+Jul 02 21:12:38 *	- global notices.
+Jul 02 21:12:38 *	-  
+Jul 02 21:12:38 *	- Representing an on-topic project? Don't forget to register, more information
+Jul 02 21:12:38 *	- can be found on the https://freenode.net website under "Group Registration".
+Jul 02 21:12:38 *	-  
+Jul 02 21:12:38 *	- freenode organises an annual conference, and we would like to extend our
+Jul 02 21:12:38 *	- thanks to the attendees, exhibitors and speakers who made freenode #live 2017
+Jul 02 21:12:38 *	- possible. And of course, our generous sponsors: Bytemark, Canonical (Ubuntu),
+Jul 02 21:12:38 *	- Falanx Cyber Security, Private Internet Access and Yubico for footing the bill.
+Jul 02 21:12:38 *	-  
+Jul 02 21:12:38 *	- Thank you also to our server sponsors for the sustained support in keeping the
+Jul 02 21:12:38 *	- network going for close to two decades.
+Jul 02 21:12:38 *	-  
+Jul 02 21:12:38 *	- freenode #live returns to Bristol, UK on November 3rd-4th 2018. Our Call for
+Jul 02 21:12:38 *	- Proposals is live at https://freenode.live and open until July 31, 2018. If 
+Jul 02 21:12:38 *	- you are interested in sponsoring this event, please send an e-mail to
+Jul 02 21:12:38 *	- sponsor@freenode.live
+Jul 02 21:12:38 *	-  
+Jul 02 21:12:38 *	- Thank you for using freenode!
+Jul 02 21:12:38 *	-  
+Jul 02 21:12:38 *	-  
+Jul 02 21:12:38 *	End of /MOTD command.

@@ -1,0 +1,101 @@
+T 1530579934 19*	Now talking on 22#perl6
+T 1530579934 22*	Topic for 22#perl6 is: »ö« Welcome to Perl 6! | https://perl6.org/ | evalbot usage: 'p6: say 3;' or rakudo:,  or /msg camelia p6: ... | irclog: http://irc.perl6.org or http://colabti.org/irclogger/irclogger_logs/perl6 | UTF-8 is our friend! 🦋
+T 1530579934 22*	Topic for 22#perl6 set by 26Zoffix!WeeChat@perl6/zoffix (24Fri May 25 14:23:22 2018)
+T 1530579961 24*	mcmillhj has quit (Ping timeout: 240 seconds)
+T 1530580040 18<kjk18>	say I have two Seq's, seq1 and seq2; how do I create a new Seq, seq3, such that when iterated, it will go through seq1 and then seq2 ?
+T 1530580336 20*	Disconnected (20)
+T 1530580356 23*	28raymond_ is already in use. Retrying with 18raymond_...
+T 1530580356 23*	28raymond_ is already in use. Retrying with 18raymond__...
+T 1530580358 22*	26raymond__ sets mode 24+Z on 22raymond__
+T 1530580358 22*	26raymond__ sets mode 24+i on 22raymond__
+T 1530580358 -18NickServ-	This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+T 1530580363 19*	Now talking on 22#perl6
+T 1530580363 22*	Topic for 22#perl6 is: »ö« Welcome to Perl 6! | https://perl6.org/ | evalbot usage: 'p6: say 3;' or rakudo:,  or /msg camelia p6: ... | irclog: http://irc.perl6.org or http://colabti.org/irclogger/irclogger_logs/perl6 | UTF-8 is our friend! 🦋
+T 1530580363 22*	Topic for 22#perl6 set by 26Zoffix!WeeChat@perl6/zoffix (24Fri May 25 14:23:22 2018)
+T 1530580494 24*	raymond_ has quit (Ping timeout: 240 seconds)
+T 1530580506 18<Xliff18>	kjk: Why would you want to use sequences for that?
+T 1530580507 18<kjk18>	p6: my $seq1 = 1...5; my $seq2 = 6...10; my $seq3 = flat $seq1, |$seq2
+T 1530580508 18<camelia18>	rakudo-moar 55b2e32b9: OUTPUT: «Potential difficulties:␤    Useless use of ... in sink context␤    at <tmp>:1␤    ------> 3my $seq1 = 1...7⏏055; my $seq2 = 6...10; my $seq3 = flat $s␤    Useless use of ... in sink context␤    at <tmp>:1␤    ------> 3my $seq1 = 1..…»
+T 1530580538 18<Xliff18>	Because $seq3 is just a list of sequences, not a sequence in itself.
+T 1530580570 18<lizmat18>	Seq.new(List.iterator) would turn a List into a Seq
+T 1530580576 18<kjk18>	p6: my $seq1 = 1...5; my $seq2 = 6...10; (flat $seq1, |$seq2).WHAT
+T 1530580576 18<camelia18>	rakudo-moar 55b2e32b9: OUTPUT: «Potential difficulties:␤    Useless use of ... in sink context␤    at <tmp>:1␤    ------> 3my $seq1 = 1...7⏏055; my $seq2 = 6...10; (flat $seq1, |$seq␤    Useless use of ... in sink context␤    at <tmp>:1␤    ------> 3my $seq1 = 1..…»
+T 1530580662 18<kjk18>	Xliff: because I'm getting Seq from .pairs and I'm going to call .pairs a few times to get multiple Seq's, but in the end I want to iterate through them as if I'm iterating through just one Seq
+T 1530580663 18<Xliff18>	m: my $s1 = lazy 1..10; my $s2 = lazy 11..20; my $s3 = ($s1,$s2); for |$s3 { $_.eager.say }
+T 1530580664 18<camelia18>	rakudo-moar 55b2e32b9: OUTPUT: «(1 2 3 4 5 6 7 8 9 10)␤(11 12 13 14 15 16 17 18 19 20)␤»
+T 1530580676 18<Xliff18>	That gives you both sequences.
+T 1530580683 18<Xliff18>	You'd still need to iterate again over both.
+T 1530580707 18<Xliff18>	m: my $s1 = lazy 1..10; my $s2 = lazy 11..20; my $s3 = ($s1,$s2); for |$s3 { say "A$_" for $_.eager }
+T 1530580707 18<camelia18>	rakudo-moar 55b2e32b9: OUTPUT: «A1␤A2␤A3␤A4␤A5␤A6␤A7␤A8␤A9␤A10␤A11␤A12␤A13␤A14␤A15␤A16␤A17␤A18␤A19␤A20␤»
+T 1530580734 18<kjk18>	lizmat: I'd like to avoid turning the Seq's into List's if possible
+T 1530580756 18<lizmat18>	but you have a List of Seqs is what you're saying, right ?
+T 1530580779 18<kjk18>	yes
+T 1530580794 18<kjk18>	oh ic
+T 1530580835 18<kjk18>	get a list of Seqs and then turn the list into another Seq
+T 1530580837 18<kjk18>	would that give me a Seq of Seq's ?
+T 1530580852 24*	markoong has quit (Ping timeout: 268 seconds)
+T 1530580916 18<kjk18>	p6: Seq.new(((1...3), (4...6)).iterator)
+T 1530580916 18<camelia18>	rakudo-moar 55b2e32b9: ( no output )
+T 1530580924 18<kjk18>	p6: Seq.new(((1...3), (4...6)).iterator).WHAT
+T 1530580925 18<camelia18>	rakudo-moar 55b2e32b9: ( no output )
+T 1530580929 18<kjk18>	p6: Seq.new(((1...3), (4...6)).iterator).WHAT.say
+T 1530580930 18<camelia18>	rakudo-moar 55b2e32b9: OUTPUT: «(Seq)␤»
+T 1530581063 18<kjk18>	hmm, since I'm goting to iterate through the Seq's, I guess there's no need to turn them into a single Seq. I see.., thanks Xliff, I'll use: for |($seq1, $seq2) { ... }
+T 1530581069 23*	aborazmeh (~aborazmeh@85.109.6.13723) has joined
+T 1530581069 24*	aborazmeh has quit (Changing host)
+T 1530581069 23*	aborazmeh (~aborazmeh@unaffiliated/aborazmeh23) has joined
+T 1530581506 18<kjk18>	hmm, no.  actually I want the effect of: my $s1 = lazy 1..10; my $s2 = lazy 11..20; my @s3 := (|$s1, |$s2); for @s3 { .put }
+T 1530581512 18<kjk18>	p6: my $s1 = lazy 1..10; my $s2 = lazy 11..20; my @s3 := (|$s1, |$s2); for @s3 { .put }
+T 1530581513 18<camelia18>	rakudo-moar 55b2e32b9: OUTPUT: «1␤2␤3␤4␤5␤6␤7␤8␤9␤10␤11␤12␤13␤14␤15␤16␤17␤18␤19␤20␤»
+T 1530581564 18<kjk18>	but I'm not sure if creating the @s3 above would have already iterated both $s1 and $s2
+T 1530581645 18<Xliff18>	It does, which is why I leave them as separate sequences.
+T 1530581660 23*	mcmillhj (~yourname@c-71-62-249-25.hsd1.va.comcast.net23) has joined
+T 1530581661 18<Xliff18>	You don't iterate through them until you need to.
+T 1530581677 18<Xliff18>	By creating @s3, you iterate both and store the results.
+T 1530581708 18<Xliff18>	Oh, wait... I missed the bind. That's not a bad idea.
+T 1530581723 18<kjk18>	I see. But I don't want to iterate through them separately
+T 1530581724 18<Xliff18>	But you still flatten them, which causes the iteration.
+T 1530581788 18<Xliff18>	OK, so what's the problem. You have to use the sequences eventually. 
+T 1530581807 18<lizmat18>	https://gist.github.com/lizmat/0f8272c91cdbf37f688cf2e08231c286
+T 1530581822 18<Xliff18>	The advantage of iterating through them separately means that you don't need to store them all at once.
+T 1530581825 18<kjk18>	I want to be able to "chain" them
+T 1530581838 18<lizmat18>	kjk: that's what my solution in the gist does
+T 1530581843 18<kjk18>	like python's itertools.chain
+T 1530581844 18<Xliff18>	kjk: The problem with that is that it wouldn't be a sequence. It would be a list.
+T 1530581915 24*	ChoHag has quit (Ping timeout: 245 seconds)
+T 1530581957 24*	mcmillhj has quit (Ping timeout: 256 seconds)
+T 1530581958 18<kjk18>	hmm, thanks lizmat, will take a closer look, but it seems to be harder than I expect 
+T 1530582005 18<lizmat18>	what makes it harder is what you want to achieve: laziness all along
+T 1530582062 18<Xliff18>	Yeah. I see it now.
+T 1530582063 18<kjk18>	maybe it would be easier to write a sub that uses gather take plus some for-loop?
+T 1530582066 18<lizmat18>	if you want to have a single Seq as the result, you need an iterator: that's basically what my gist does
+T 1530582117 18<Xliff18>	m: Seq.new(4, 5, 8).say
+T 1530582118 18<camelia18>	rakudo-moar 513577c3d: OUTPUT: «Too many positionals passed; expected 2 arguments but got 4␤  in block <unit> at <tmp> line 1␤␤»
+T 1530582138 18<Xliff18>	m: Seq.new((4, 5, 8).iterator).say
+T 1530582138 18<camelia18>	rakudo-moar 513577c3d: OUTPUT: «(4 5 8)␤»
+T 1530582142 18<lizmat18>	Seq.new only takes instantiated iterators
+T 1530582150 18<Xliff18>	I see it now.
+T 1530582216 18*	lizmat goes back to trying to sleep even if it is too hot
+T 1530582290 18<AlexDaniel18>	m: my $s1 := (1 … 5); my $s2 := (10, {sleep 1; $_ + 1} … 20); my $x := (|$s1, |$s2); say $x[^7]; say now - BEGIN now
+T 1530582292 18<camelia18>	rakudo-moar 513577c3d: OUTPUT: «(1 2 3 4 5 10 11)␤1.0141914␤»
+T 1530582298 18<AlexDaniel18>	laziness seems to be preserved, no?
+T 1530582302 18<AlexDaniel18>	what am I missing?
+T 1530582311 18*	AlexDaniel is late to the discussion
+T 1530582340 18<AlexDaniel18>	kjk: ↑ ?
+T 1530582400 24*	roguelazer has quit (Quit: ZNC - http://znc.in)
+T 1530582419 24*	Bowlslaw has quit (Quit: Bowlslaw)
+T 1530582527 23*	mcmillhj (~yourname@c-71-62-249-25.hsd1.va.comcast.net23) has joined
+T 1530582626 18<kjk18>	AlexDaniel: the goal is to avoid turning the Seqs into Lists, that is, I want to be lazy all the way
+T 1530582627 24*	konsolebox has quit (Ping timeout: 255 seconds)
+T 1530582647 18<AlexDaniel18>	kjk: so what is not lazy in my example?
+T 1530582705 18<kjk18>	I guess when you do my $x := (|$s1, |$s2) you'd essentially iterate both $s1 and $s2
+T 1530582735 18<AlexDaniel18>	kjk: if you iterate $s2 it will sleep for 10 seconds
+T 1530582753 18<AlexDaniel18>	it slept only for 1, because only 1 slow element was consumed
+T 1530582756 18<AlexDaniel18>	it is lazy
+T 1530582762 18<Xliff18>	 m: my $s1 := (1 … 5); my $s2 := (10, {sleep 1; $_ + 1} … 20); my $x := (|$s1, |$s2); say $x[^8]; say now - BEGIN now
+T 1530582764 18<camelia18>	rakudo-moar 513577c3d: OUTPUT: «(1 2 3 4 5 10 11 12)␤2.015284␤»
+T 1530582766 18<Xliff18>	m: my $s1 := (1 … 5); my $s2 := (10, {sleep 1; $_ + 1} … 20); my $x := (|$s1, |$s2); say $x[^8]; say now - BEGIN now
+T 1530582768 18<camelia18>	rakudo-moar 513577c3d: OUTPUT: «(1 2 3 4 5 10 11 12)␤2.0154122␤»
+T 1530582775 18<Xliff18>	^^ 2 slow elements.
+T 1530582785 18<AlexDaniel18>	the first one is 10
+T 1530582802 18<AlexDaniel18>	ah yeah, right

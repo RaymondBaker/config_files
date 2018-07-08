@@ -1,0 +1,52 @@
+**** BEGIN LOGGING AT Mon Jul  2 21:11:03 2018
+
+Jul 02 21:11:03 *	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+Jul 02 21:11:03 *	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+Jul 02 21:11:03 *	557ABSVUC :your unique ID
+Jul 02 21:11:03 *	levin.mozilla.org message of the day
+Jul 02 21:11:03 *	-                      __          _
+Jul 02 21:11:03 *	-                     / /__ _   __(_)___
+Jul 02 21:11:03 *	-                    / / _ \ | / / / __ \
+Jul 02 21:11:03 *	-                   / /  __/ |/ / / / / /
+Jul 02 21:11:03 *	-                  /_/\___/|___/_/_/ /_/
+Jul 02 21:11:03 *	- 
+Jul 02 21:11:03 *	-               M O Z I L L A   D O T   O R G
+Jul 02 21:11:03 *	-                 https://www.mozilla.org/
+Jul 02 21:11:03 *	- 
+Jul 02 21:11:03 *	- =================================================================
+Jul 02 21:11:03 *	-  This server is for use by Mozilla developers, testers, and
+Jul 02 21:11:03 *	-  users. If you are not one, please find another server.
+Jul 02 21:11:03 *	- 
+Jul 02 21:11:03 *	-  NOTICE: Your IP address will be portscanned by our open
+Jul 02 21:11:03 *	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+Jul 02 21:11:03 *	- 
+Jul 02 21:11:03 *	- =================================================================
+Jul 02 21:11:03 *	-  Project information:
+Jul 02 21:11:03 *	-   Firefox                https://support.mozilla.org/
+Jul 02 21:11:03 *	-   Mobile                 https://support.mozilla.org/mobile
+Jul 02 21:11:03 *	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+Jul 02 21:11:03 *	-  
+Jul 02 21:11:03 *	-  Help for new contributors:
+Jul 02 21:11:03 *	-   https://developer.mozilla.org/Introduction
+Jul 02 21:11:03 *	-  
+Jul 02 21:11:03 *	- =================================================================
+Jul 02 21:11:03 *	-  Ports:
+Jul 02 21:11:03 *	-   Non-SSL: 6665 - 6669
+Jul 02 21:11:03 *	-       SSL: 6697, 8443
+Jul 02 21:11:03 *	- =================================================================
+Jul 02 21:11:03 *	- 
+Jul 02 21:11:03 *	-  For a list of other helpful channels please visit
+Jul 02 21:11:03 *	-  https://wiki.mozilla.org/IRC or use the /list command.
+Jul 02 21:11:03 *	-  Additional help with IRC at http://www.irchelp.org/
+Jul 02 21:11:03 *	- 
+Jul 02 21:11:03 *	End of message of the day.
+Jul 02 21:11:03 *	There are 5501 users and 673 invisible on 4 servers
+Jul 02 21:11:03 *	12 :operator(s) online
+Jul 02 21:11:03 *	1 :unknown connections
+Jul 02 21:11:03 *	1886 :channels formed
+Jul 02 21:11:03 *	I have 2268 clients and 1 servers
+Jul 02 21:11:03 *	Current Local Users: 2268  Max: 2793
+Jul 02 21:11:03 *	Current Global Users: 6174  Max: 7123
+Jul 02 21:11:03 *	moz-l343n5.cable.rogers.com :is now your displayed host
+Jul 02 21:11:03 *	raymond sets mode +x on raymond
+Jul 02 21:11:03 *	*** You are connected using SSL cipher "DHE-RSA-AES-256-CBC-SHA256"
