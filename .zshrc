@@ -60,6 +60,8 @@ alias ls='ls --color=tty'
 alias la='ls -la --color=tty'
 alias ll='ls -ltra --color=tty'
 alias cd..='cd ..'
+alias emptyTrash='rm -rf ~/.local/share/Trash/files/*'
+alias showTrash='ls ~/.local/share/Trash/files/'
 
 # Functions
 function trash()

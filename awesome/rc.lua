@@ -387,10 +387,10 @@ globalkeys = gears.table.join(
     awful.key({                   }, "#174", function () awful.util.spawn("/usr/bin/cmus-remote -s")                end,
               {description = "Stop Song", group = "launcher"}),
 
-    awful.key({"Shift"          }, "#171", function () awful.util.spawn("/usr/bin/cmus-remote -s")                end,
-              {description = "Seek Forward", group = "launcher"}),
-    awful.key({"Shift"          }, "#173", function () awful.util.spawn("/usr/bin/cmus-remote -s")                end,
-              {description = "Seek Backwards", group = "launcher"}),
+    awful.key({"Shift"          }, "#171", function () awful.util.spawn("/usr/bin/cmus-remote -k +10")                end,
+              {description = "Seek Forward 10 Seconds", group = "launcher"}),
+    awful.key({"Shift"          }, "#173", function () awful.util.spawn("/usr/bin/cmus-remote -k -10")                end,
+              {description = "Seek Backwards 10 Seconds", group = "launcher"}),
     -- }}
 
 
