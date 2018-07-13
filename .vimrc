@@ -5,6 +5,14 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+"set lazyredraw
+
+" Disable if vim is being slow
+set cursorline
+
+" temp fix for slow p6 highlighting
+"set re=1
+
 set nocompatible
 filetype off
 
@@ -13,7 +21,8 @@ set smartindent
 set mouse=a
 
 " Share clipboard with system
-set clipboard=unnamed
+" set clipboard=unnamed
+set clipboard=unnamedplus
 
 "Use 256 colours (Use this setting only if your terminal supports it)
 set t_Co=256
@@ -21,6 +30,8 @@ set t_Co=256
 syntax on
 " Found in .vim/colors
 colorscheme gruvbox
+" Use dark theme
+set background=dark
 
 " }}}
 
@@ -31,15 +42,17 @@ colorscheme gruvbox
 vnoremap ~1 <esc>`>a)<esc>`<i(<esc>
 vnoremap ~2 <esc>`>a]<esc>`<i[<esc>
 vnoremap ~3 <esc>`>a}<esc>`<i{<esc>
-vnoremap ~$ <esc>`>a"<esc>`<i"<esc>
+vnoremap ~4 <esc>`>o}<esc>`<i{<CR><esc>
+vnoremap ~$ <esc>`>a><esc>`<i<<esc>
 vnoremap ~q <esc>`>a'<esc>`<i'<esc>
-vnoremap ~e <esc>`>a"<esc>`<i"<esc>
+vnoremap ~Q <esc>`>a"<esc>`<i"<esc>
 
 " insert parenthesis/brackets/etc.
 inoremap ~1 ()<esc>i
 inoremap ~2 []<esc>i
 inoremap ~3 {}<esc>i
 inoremap ~4 {<esc>o}<esc>O
+inoremap ~$ <><esc>i
 inoremap ~q ''<esc>i
 inoremap ~e ""<esc>i
 inoremap ~t <><esc>i
@@ -50,10 +63,39 @@ inoremap ~t <><esc>i
 " move to beginning and end of line
 nnoremap B ^
 nnoremap E $
+
+
+" TODO:
+" {{{
+" have functions that makes markers at all numbers specified 
+" have function keys all correspond to a marker
+" set marker with shift function key
+" gt goes to and sets marker at cur location
+" gb goes back to marker
+" leader n goes to next buffer
+" easy way to open buffers and close them
+" display what buffers are open on status line?
+" fzf open file in buffer
 " }}}
 
-" Misc Macros
+" Map shift+function for terminal
+" TODO: check if running in terminal before doing this
 " {{{
+" for rxvt
+" F1 = ^[[11~
+" F2 = ^[[12~
+" S-F1 = ^[[23~
+"set <S-F1>=^[[23~
+
+
+" }}}
+
+" Misc Remaps
+" {{{
+
+" Visual paste doesnt overwrite buffer
+" :let @*=@0<CR>:let @"=@0<CR>
+xnoremap <silent> p p:let @+=@0<CR>
 
 " // search for highlighed word
 vnoremap // y/<C-R>"<CR>
@@ -141,6 +183,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+
+" Required because old one was laggy
+Plugin 'vim-perl/vim-perl6'
 "Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 
@@ -238,5 +283,8 @@ command! -nargs=+ -complete=dir AgIn call SearchWithAgInDirectory(<f-args>)
 " gv gets last selection
 "
 " ctrl d tabs back in insert mode
+"
+" you can set marks with m<markname>
+" you move to the mark with `<markname
 " 
 " }}}

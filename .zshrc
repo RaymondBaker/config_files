@@ -62,8 +62,15 @@ alias ll='ls -ltra --color=tty'
 alias cd..='cd ..'
 alias emptyTrash='rm -rf ~/.local/share/Trash/files/*'
 alias showTrash='ls ~/.local/share/Trash/files/'
+alias vim='nvim'
+
 
 # Functions
+function cs()
+{
+    cd "$@" && ls    
+}
+
 function trash()
 {
     mv "$1" ~/.local/share/Trash/files/
