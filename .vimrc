@@ -11,7 +11,7 @@ set expandtab
 set cursorline
 
 " temp fix for slow p6 highlighting
-"set re=1
+set re=1
 
 set nocompatible
 filetype off
@@ -92,6 +92,8 @@ nnoremap E $
 
 " Misc Remaps
 " {{{
+"
+xnoremap I <esc>`<<C-V>`>I
 
 " Visual paste doesnt overwrite buffer
 " :let @*=@0<CR>:let @"=@0<CR>
