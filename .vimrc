@@ -13,6 +13,10 @@ set cursorline
 " temp fix for slow p6 highlighting
 set re=1
 
+" searchs are not case sensitive unless you cap
+set ignorecase
+set smartcase
+
 set nocompatible
 filetype off
 
@@ -60,13 +64,12 @@ inoremap ~t <><esc>i
 
 " Movement
 " {{{
-" move to beginning and end of line
-nnoremap B ^
-nnoremap E $
+" }}}
 
 
 " TODO:
 " {{{
+
 " have functions that makes markers at all numbers specified 
 " have function keys all correspond to a marker
 " set marker with shift function key
@@ -101,6 +104,9 @@ xnoremap <silent> p p:let @+=@0<CR>
 
 " // search for highlighed word
 vnoremap // y/<C-R>"<CR>
+
+" esc removes search highlighting
+nnoremap <silent> <esc> :noh<return><esc>
 
 " remove trailing whitespace
 nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
