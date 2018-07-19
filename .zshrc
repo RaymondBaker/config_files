@@ -26,6 +26,9 @@ WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider
 ## Add to path
 export "PATH=/opt/rakudo-star-2018.04/bin:/opt/rakudo-star-2018.04/share/perl6/site/bin:$PATH"
 
+autoload edit-command-line; zle -N edit-command-line
+bindkey "^V" edit-command-line
+
 ## Keybindings section
 bindkey -e
 bindkey '^[[7~' beginning-of-line                               # Home key
