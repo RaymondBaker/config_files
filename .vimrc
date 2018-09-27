@@ -1,9 +1,40 @@
+" Vundle
+" {{{
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+"Required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+
+Plugin 'neovimhaskell/haskell-vim'
+
+"ts syntax highlighting
+Plugin 'leafgarland/typescript-vim'
+
+" Required because old one was laggy
+Plugin 'rust-lang/rust.vim'
+Plugin 'vim-perl/vim-perl6'
+"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" }}}
+
+
 
 " General Setup
 " {{{
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+"Set extension ts to typescript
+autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
 
 "set lazyredraw
 
@@ -18,7 +49,7 @@ set ignorecase
 set smartcase
 
 set nocompatible
-filetype off
+"filetype off
 
 set number
 set smartindent
@@ -37,6 +68,19 @@ colorscheme gruvbox
 " Use dark theme
 set background=dark
 
+set backspace=indent,eol,start
+
+set foldmethod=syntax   
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
+
+" Save view and load view (this includes folds)
+augroup AutoSaveFolds
+    autocmd!
+    autocmd BufWinLeave * mkview
+    autocmd BufWinEnter * silent! loadview
+augroup END
 " }}}
 
 
@@ -58,6 +102,7 @@ inoremap ~3 {}<esc>i
 inoremap ~4 {<esc>o}<esc>O
 inoremap ~$ <><esc>i
 inoremap ~q ''<esc>i
+inoremap ~Q ""<esc>i
 inoremap ~e ""<esc>i
 inoremap ~t <><esc>i
 "}}}
@@ -179,28 +224,6 @@ hi User0 ctermfg=fg ctermbg=DarkGrey guifg=#ffffff  guibg=#094afe
 "hi User3 ctermbg=blue  ctermfg=green guibg=blue  guifg=green
 " }}}
 
-
-" Vundle
-" {{{
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-"Required
-Plugin 'VundleVim/Vundle.vim'
-
-
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-
-" Required because old one was laggy
-Plugin 'vim-perl/vim-perl6'
-"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" }}}
 
 " FZF Bindings
 " {{{

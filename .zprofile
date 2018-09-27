@@ -1,4 +1,4 @@
-PATH="/usr/local/sbin:/usr/bin/core_perl:/usr/local/bin:/usr/bin:$HOME/.config/bspwm/panel:$HOME/.bin"
+#PATH="/usr/local/sbin:/usr/bin/core_perl:/usr/local/bin:/usr/bin:$HOME/.config/bspwm/panel:$HOME/.bin:/opt/rakudo-star-2018.04/bin:/opt/rakudo-star-2018.04/share/perl6/site/bin:$HOME/.perl6/bin"
 export PANEL_FIFO="/tmp/panel-fifo"
 export PATH
 export XDG_CONFIG_HOME="$HOME/.config"
