@@ -104,6 +104,8 @@ inoremap ~t <><esc>i
 " {{{
 nnoremap <silent> <F1> :bprev<CR>
 nnoremap <silent> <F2> :bnext<CR>
+inoremap <silent> <F1> <ESC>:bprev<CR>
+inoremap <silent> <F2> <ESC>:bnext<CR>
 " move to beginning and end of line
 " }}}
 
