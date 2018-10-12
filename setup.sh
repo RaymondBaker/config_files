@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+#TODO: add options for what system this is going on ie putty awesome
+
 rm ~/.zprofile
 rm ~/.vimrc
 rm ~/.zshrc

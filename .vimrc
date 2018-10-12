@@ -1,26 +1,81 @@
 
+" Vundle
+" {{{
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+"Required
+Plugin 'VundleVim/Vundle.vim'
+
+
+"Javascript
+Plugin 'othree/javascript-libraries-syntax.vim'
+
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+"
+
+Plugin 'ap/vim-buftabline'
+
+Plugin 'vim-perl/vim-perl6'
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" }}}
+
+
+" Javascript libraries
+autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
+autocmd BufReadPre *.js let b:javascript_lib_use_underscore = 1
+autocmd BufReadPre *.js let b:javascript_lib_use_backbone = 1
+autocmd BufReadPre *.js let b:javascript_lib_use_prelude = 0
+autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 0
+
+" Ignore blank lines for fold
+set foldignore=#<CR>za
+
+" Save folds
+augroup AutoSaveFolds
+    autocmd!
+    autocmd BufWinLeave * mkview
+    autocmd BufWinEnter * silent loadview
+augroup END
+
 " General Setup
 " {{{
-set tabstop=4
-set shiftwidth=4
-set expandtab
-
 set nocompatible
-filetype off
-
 set number
 set smartindent
-set mouse=a
+
+"Vim can keep files open without necessarily displaying them on screen
+set hidden
+
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+
+" Don't use this in putty
+"set mouse=a
 
 " Share clipboard with system
-set clipboard=unnamed
+"set clipboard=unnamed
+"
+set backspace=indent,eol,start
 
 "Use 256 colours (Use this setting only if your terminal supports it)
 set t_Co=256
 
 syntax on
 " Found in .vim/colors
-colorscheme gruvbox
+"colorscheme gruvbox
+
+
+set foldmethod=indent
+set foldlevelstart=99
 
 " }}}
 
@@ -33,7 +88,7 @@ vnoremap ~2 <esc>`>a]<esc>`<i[<esc>
 vnoremap ~3 <esc>`>a}<esc>`<i{<esc>
 vnoremap ~$ <esc>`>a"<esc>`<i"<esc>
 vnoremap ~q <esc>`>a'<esc>`<i'<esc>
-vnoremap ~e <esc>`>a"<esc>`<i"<esc>
+vnoremap ~Q <esc>`>a"<esc>`<i"<esc>
 
 " insert parenthesis/brackets/etc.
 inoremap ~1 ()<esc>i
@@ -41,19 +96,32 @@ inoremap ~2 []<esc>i
 inoremap ~3 {}<esc>i
 inoremap ~4 {<esc>o}<esc>O
 inoremap ~q ''<esc>i
-inoremap ~e ""<esc>i
+inoremap ~Q ""<esc>i
 inoremap ~t <><esc>i
 "}}}
 
 " Movement
 " {{{
+nnoremap <silent> <F1> :bprev<CR>
+nnoremap <silent> <F2> :bnext<CR>
 " move to beginning and end of line
-nnoremap B ^
-nnoremap E $
 " }}}
 
 " Misc Macros
 " {{{
+"
+
+
+"nnoremap gt m1:
+
+" Align current paragraph
+noremap <leader>a =ip
+" clone paragraph
+noremap yp yap<S-}>p
+
+" Don't overidde clipboard when pasting
+"xnoremap p "_dP
+xnoremap <silent> p p:let @"=@0<CR>
 
 " // search for highlighed word
 vnoremap // y/<C-R>"<CR>
@@ -94,15 +162,15 @@ function! HighlightSearch()
     endif
 endfunction
 
-hi User1 ctermfg=fg ctermbg=DarkGrey guifg=#ffdad8  guibg=#880c0e
-hi User2 ctermfg=fg ctermbg=DarkGrey guifg=#000000  guibg=#F4905C
-hi User3 ctermfg=fg ctermbg=DarkGrey guifg=#292b00  guibg=#f4f597
-hi User4 ctermfg=fg ctermbg=DarkGrey guifg=#112605  guibg=#aefe7B
-hi User5 ctermfg=fg ctermbg=DarkGrey guifg=#051d00  guibg=#7dcc7d
-hi User7 ctermfg=fg ctermbg=DarkGrey guifg=#ffffff  guibg=#880c0e gui=bold
-hi User8 ctermfg=fg ctermbg=DarkGrey guifg=#ffffff  guibg=#5b7fbb
-hi User9 ctermfg=fg ctermbg=DarkGrey guifg=#ffffff  guibg=#810085
-hi User0 ctermfg=fg ctermbg=DarkGrey guifg=#ffffff  guibg=#094afe
+hi User1 ctermfg=Grey ctermbg=DarkBlue guifg=#ffdad8  guibg=#880c0e
+hi User2 ctermfg=Grey ctermbg=DarkBlue guifg=#000000  guibg=#F4905C
+hi User3 ctermfg=Grey ctermbg=DarkBlue guifg=#292b00  guibg=#f4f597
+hi User4 ctermfg=Grey ctermbg=DarkBlue guifg=#112605  guibg=#aefe7B
+hi User5 ctermfg=Grey ctermbg=DarkBlue guifg=#051d00  guibg=#7dcc7d
+hi User7 ctermfg=Grey ctermbg=DarkBlue guifg=#ffffff  guibg=#880c0e gui=bold
+hi User8 ctermfg=Grey ctermbg=DarkBlue guifg=#ffffff  guibg=#5b7fbb
+hi User9 ctermfg=Grey ctermbg=DarkBlue guifg=#ffffff  guibg=#810085
+hi User0 ctermfg=Grey ctermbg=DarkBlue guifg=#ffffff  guibg=#094afe
 
 " }}}
 
@@ -130,24 +198,6 @@ hi User0 ctermfg=fg ctermbg=DarkGrey guifg=#ffffff  guibg=#094afe
 " }}}
 
 
-" Vundle
-" {{{
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-"Required
-Plugin 'VundleVim/Vundle.vim'
-
-
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" }}}
 
 " FZF Bindings
 " {{{
@@ -237,6 +287,8 @@ command! -nargs=+ -complete=dir AgIn call SearchWithAgInDirectory(<f-args>)
 " {{{
 " gv gets last selection
 "
+" ctrl o goes back to previous location
+"
 " ctrl d tabs back in insert mode
-" 
+"
 " }}}
