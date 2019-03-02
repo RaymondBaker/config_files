@@ -24,7 +24,8 @@ WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider
 
 
 ## Add to path
-export "PATH=/opt/rakudo-star-2018.04/bin:/opt/rakudo-star-2018.04/share/perl6/site/bin:$PATH"
+#export "PATH=/opt/rakudo-star-2018.04/bin:/opt/rakudo-star-2018.04/share/perl6/site/bin:$PATH"
+export "PATH=$HOME/.phantomjs/bin:$PATH"
 
 autoload edit-command-line; zle -N edit-command-line
 bindkey "^V" edit-command-line

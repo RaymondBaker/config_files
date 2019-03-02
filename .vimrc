@@ -9,7 +9,13 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 
+Plugin 'tpope/vim-surround'
+
+
 Plugin 'neovimhaskell/haskell-vim'
+
+"buffer tabs at top
+Plugin 'ap/vim-buftabline'
 
 "ts syntax highlighting
 Plugin 'leafgarland/typescript-vim'
@@ -109,6 +115,10 @@ inoremap ~t <><esc>i
 
 " Movement
 " {{{
+nnoremap <silent> <F1> :bprev<CR>
+nnoremap <silent> <F2> :bnext<CR>
+inoremap <silent> <F1> <ESC>:bprev<CR>
+inoremap <silent> <F2> <ESC>:bnext<CR>
 " }}}
 
 
@@ -157,7 +167,7 @@ nnoremap <silent> <esc> :noh<return><esc>
 nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 
 " paste with correct indentation
-nnoremap p p=`]
+"nnoremap p p=`]
 " }}}
 
 "map shift tab to untab in insert mode

@@ -104,6 +104,12 @@ myawesomemenu = {
     { "restart", awesome.restart }
 }
 
+util_location = "/home/raymond/Programming/Util_Scripts/"
+
+myutils = {
+    { "Display Select", util_location.."dmenu_scripts/autorandr_prompt.sh"}
+}
+
 myexitmenu = {
     { "log out", function() awesome.quit() end, "/usr/share/icons/Arc-Maia/actions/24@2x/system-log-out.png" },
     { "suspend", "systemctl suspend", "/usr/share/icons/Arc-Maia/actions/24@2x/gnome-session-suspend.png" },
@@ -120,6 +126,7 @@ mymainmenu = freedesktop.menu.build({
         -- other triads can be put here
     },
     after = {
+        { "Utils", myutils },
         { "Awesome", myawesomemenu, "/usr/share/awesome/icons/awesome16.png" },
         { "Exit", myexitmenu, "/usr/share/icons/Arc-Maia/actions/24@2x/system-restart.png" },
         -- other triads can be put here
