@@ -377,6 +377,8 @@ globalkeys = gears.table.join(
     --          {description = "launch dmenu", group = "launcher"}),
     awful.key({ modkey,           }, "b", function () awful.util.spawn("/usr/bin/chromium")          end,
               {description = "launch Browser", group = "launcher"}),
+    awful.key({ modkey,           }, "n", function () awful.util.spawn(terminal.." -e /usr/bin/newsboat")          end,
+              {description = "launch Newsboat", group = "launcher"}),
     awful.key({ modkey, "Shift"   }, "p", function () awful.util.spawn("/usr/bin/rofi -show")          end,
               {description = "launch rofi", group = "launcher"}),
     awful.key({ modkey,           }, "e", function () awful.util.spawn("/usr/bin/thunar")          end,
