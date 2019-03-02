@@ -18,5 +18,6 @@ run xfsettingsd
 run gnome-keyring-daemon
 run urxvtd
 run nm-applet
+run udiskie --tray
 run pa-applet
 run xfce4-power-manager

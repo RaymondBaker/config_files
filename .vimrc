@@ -115,10 +115,10 @@ inoremap ~t <><esc>i
 
 " Movement
 " {{{
-nnoremap <silent> <F1> :bprev<CR>
-nnoremap <silent> <F2> :bnext<CR>
-inoremap <silent> <F1> <ESC>:bprev<CR>
-inoremap <silent> <F2> <ESC>:bnext<CR>
+nnoremap <silent> <F1> :bprev!<CR>
+nnoremap <silent> <F2> :bnext!<CR>
+inoremap <silent> <F1> <ESC>:bprev!<CR>
+inoremap <silent> <F2> <ESC>:bnext!<CR>
 " }}}
 
 

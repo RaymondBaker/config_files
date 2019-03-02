@@ -115,6 +115,7 @@ myexitmenu = {
     { "suspend", "systemctl suspend", "/usr/share/icons/Arc-Maia/actions/24@2x/gnome-session-suspend.png" },
     { "hibernate", "systemctl hibernate", "/usr/share/icons/Arc-Maia/actions/24@2x/gnome-session-hibernate.png" },
     { "reboot", "systemctl reboot", "/usr/share/icons/Arc-Maia/actions/24@2x/view-refresh.png" },
+    { "restart", "shutdown -r now", "/usr/share/icons/Arc-Maia/actions/24@2x/view-refresh.png" },
     { "shutdown", "poweroff", "/usr/share/icons/Arc-Maia/actions/24@2x/system-shutdown.png" }
 }
 
@@ -123,6 +124,7 @@ mymainmenu = freedesktop.menu.build({
         { "Terminal", terminal, "/usr/share/icons/Adwaita/32x32/apps/utilities-terminal.png" },
         { "Browser", browser, "/usr/share/icons/hicolor/24x24/apps/chromium.png" },
         { "Files", filemanager, "/usr/share/icons/Adwaita/32x32/apps/system-file-manager.png" },
+        { "Feeds", terminal .. " -e newsboat" },
         -- other triads can be put here
     },
     after = {
