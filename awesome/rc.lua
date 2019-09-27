@@ -107,7 +107,7 @@ myawesomemenu = {
 util_location = "/home/raymond/Programming/Util_Scripts/"
 
 myutils = {
-    { "Display Select", util_location.."dmenu_scripts/autorandr_prompt.sh"}
+    { "Display Select", util_location.."dmenu_scripts/autorandr_prompt.pl"}
 }
 
 myexitmenu = {
@@ -379,12 +379,15 @@ globalkeys = gears.table.join(
               {description = "launch Browser", group = "launcher"}),
     awful.key({ modkey,           }, "n", function () awful.util.spawn(terminal.." -e /usr/bin/newsboat")          end,
               {description = "launch Newsboat", group = "launcher"}),
+    awful.key({ }, "Print", function () awful.util.spawn("flameshot gui") end,
+              {description = "launch screengrab", group = "launcher"}), 
     awful.key({ modkey, "Shift"   }, "p", function () awful.util.spawn("/usr/bin/rofi -show")          end,
               {description = "launch rofi", group = "launcher"}),
     awful.key({ modkey,           }, "e", function () awful.util.spawn("/usr/bin/thunar")          end,
               {description = "launch filemanager", group = "launcher"}),
     awful.key({ modkey,           }, "space", function () awful.layout.inc(-1)                end,
               {description = "select previous", group = "layout"}),
+
 
     -- MUSIC CONTROL
     -- {{
