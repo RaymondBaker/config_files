@@ -11,6 +11,7 @@ Plugin 'junegunn/fzf.vim'
 
 Plugin 'tpope/vim-surround'
 
+Plugin 'scrooloose/nerdtree'
 
 Plugin 'neovimhaskell/haskell-vim'
 
@@ -90,27 +91,27 @@ augroup END
 " }}}
 
 
-" Tilda Macros
+" Tilda Surround Macros
 " {{{
 " surrond selection in parenthesis/brackets/etc.
-vnoremap ~1 <esc>`>a)<esc>`<i(<esc>
-vnoremap ~2 <esc>`>a]<esc>`<i[<esc>
-vnoremap ~3 <esc>`>a}<esc>`<i{<esc>
-vnoremap ~4 <esc>`>o}<esc>`<i{<CR><esc>
-vnoremap ~$ <esc>`>a><esc>`<i<<esc>
-vnoremap ~q <esc>`>a'<esc>`<i'<esc>
-vnoremap ~Q <esc>`>a"<esc>`<i"<esc>
-
-" insert parenthesis/brackets/etc.
-inoremap ~1 ()<esc>i
-inoremap ~2 []<esc>i
-inoremap ~3 {}<esc>i
-inoremap ~4 {<esc>o}<esc>O
-inoremap ~$ <><esc>i
-inoremap ~q ''<esc>i
-inoremap ~Q ""<esc>i
-inoremap ~e ""<esc>i
-inoremap ~t <><esc>i
+" vnoremap ~1 <esc>`>a)<esc>`<i(<esc>
+" vnoremap ~2 <esc>`>a]<esc>`<i[<esc>
+" vnoremap ~3 <esc>`>a}<esc>`<i{<esc>
+" vnoremap ~4 <esc>`>o}<esc>`<i{<CR><esc>
+" vnoremap ~$ <esc>`>a><esc>`<i<<esc>
+" vnoremap ~q <esc>`>a'<esc>`<i'<esc>
+" vnoremap ~Q <esc>`>a"<esc>`<i"<esc>
+" 
+" " insert parenthesis/brackets/etc.
+" inoremap ~1 ()<esc>i
+" inoremap ~2 []<esc>i
+" inoremap ~3 {}<esc>i
+" inoremap ~4 {<esc>o}<esc>O
+" inoremap ~$ <><esc>i
+" inoremap ~q ''<esc>i
+" inoremap ~Q ""<esc>i
+" inoremap ~e ""<esc>i
+" inoremap ~t <><esc>i
 "}}}
 
 " Movement
@@ -119,6 +120,9 @@ nnoremap <silent> <F1> :bprev!<CR>
 nnoremap <silent> <F2> :bnext!<CR>
 inoremap <silent> <F1> <ESC>:bprev!<CR>
 inoremap <silent> <F2> <ESC>:bnext!<CR>
+" Disable in nerdtree
+autocmd FileType nerdtree noremap <buffer> <F1> <nop>
+autocmd FileType nerdtree noremap <buffer> <F2> <nop>
 " }}}
 
 
@@ -234,6 +238,10 @@ hi User0 ctermfg=fg ctermbg=DarkGrey guifg=#ffffff  guibg=#094afe
 "hi User3 ctermbg=blue  ctermfg=green guibg=blue  guifg=green
 " }}}
 
+" NERDTree Bindings
+" {{
+nmap <F3> :NERDTreeToggle<CR>
+" }}
 
 " FZF Bindings
 " {{{
