@@ -13,4 +13,3 @@ ln -s ~/.dotfiles/.vimrc            ~/.vimrc
 ln -s ~/.dotfiles/.zshrc            ~/.zshrc
 ln -s ~/.dotfiles/.awesome          ~/.config/awesome
 ln -s ~/.dotfiles/.ranger           ~/.config/ranger
-ln -s ~/.dotfiles/surf/script.js    ~/.surf/script.js
