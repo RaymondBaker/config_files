@@ -19,5 +19,5 @@ run gnome-keyring-daemon
 run urxvtd
 run pa-applet
 run nm-applet
-run xfce4-power-manager
 run udiskie --tray
+run xfce4-power-manager

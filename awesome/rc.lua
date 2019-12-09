@@ -375,10 +375,12 @@ globalkeys = gears.table.join(
     --           {description = "decrease the number of columns", group = "layout"}),
     -- awful.key({ modkey,           }, "space", function () awful.util.spawn("/usr/bin/dmenu_recency")          end,
     --          {description = "launch dmenu", group = "launcher"}),
-    awful.key({ modkey,           }, "b", function () awful.util.spawn("/usr/bin/chromium")          end,
+    awful.key({ modkey,           }, "b", function () awful.util.spawn("/usr/bin/firefox")          end,
               {description = "launch Browser", group = "launcher"}),
     awful.key({ modkey,           }, "n", function () awful.util.spawn(terminal.." -e /usr/bin/newsboat")          end,
               {description = "launch Newsboat", group = "launcher"}),
+    awful.key({ modkey,           }, "a", function () awful.util.spawn("/usr/bin/audacious")          end,
+              {description = "launch Audacious", group = "launcher"}),
     awful.key({ }, "Print", function () awful.util.spawn("flameshot gui") end,
               {description = "launch screengrab", group = "launcher"}), 
     awful.key({ modkey, "Shift"   }, "p", function () awful.util.spawn("/usr/bin/rofi -show")          end,
@@ -389,7 +391,7 @@ globalkeys = gears.table.join(
               {description = "select previous", group = "layout"}),
 
 
-    -- MUSIC CONTROL
+    --[[ MUSIC CONTROL
     -- {{
     -- #171 is the button's keycode and can be found with xev
     awful.key({                   }, "#171", function () awful.util.spawn("/usr/bin/cmus-remote -n")                end,
@@ -405,7 +407,7 @@ globalkeys = gears.table.join(
               {description = "Seek Forward 10 Seconds", group = "launcher"}),
     awful.key({"Shift"          }, "#173", function () awful.util.spawn("/usr/bin/cmus-remote -k -10")                end,
               {description = "Seek Backwards 10 Seconds", group = "launcher"}),
-    -- }}
+    }} --]]
 
 
     awful.key({ modkey, "Control" }, "n",

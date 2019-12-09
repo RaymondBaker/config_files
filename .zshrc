@@ -67,6 +67,7 @@ alias cd..='cd ..'
 alias emptyTrash='rm -rf ~/.local/share/Trash/files/*'
 alias showTrash='ls ~/.local/share/Trash/files/'
 alias vim='nvim'
+alias yt2m4a='youtube-dl -x --embed-thumbnail --format mp4'
 
 
 # Functions

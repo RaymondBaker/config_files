@@ -1,6 +1,7 @@
-browser "surf -sF %u"
+browser "firefox -url %u"
 
 auto-reload yes
+cleanup-on-quit yes
 
 ssl-verifyhost no
 ssl-verifypeer no
