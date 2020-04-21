@@ -40,6 +40,11 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+"Set tab stop diff for 
+"autocmd BufRead,BufNewFile   *.scm,*.html,*.rkt setlocal tabstop=2 shiftwidth=4 expandtab
+"autocmd BufRead,BufNewFile   *.pl syntax on
+" also look into getting racket-vim plugin
+
 "Set extension ts to typescript
 autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
 
