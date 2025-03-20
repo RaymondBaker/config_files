@@ -15,6 +15,7 @@ config.animation_fps = 64
 -- Required because gnome wayland requires apps to draw their title bar and default is really ugly
 config.enable_wayland = false
 
+
 config.font_size = 13
 
 config.keys = {
@@ -34,6 +35,9 @@ config.keys = {
     action = wezterm.action.CloseCurrentPane { confirm = true },
   },
 }
+
+-- This is how you append in the future
+-- table.insert(config.keys,  {})
 
 -- Must happen after keys is set
 local smart_splits = wezterm.plugin.require('https://github.com/mrjones2014/smart-splits.nvim')
