@@ -34,6 +34,15 @@ config.keys = {
     mods = 'CTRL',
     action = wezterm.action.CloseCurrentPane { confirm = true },
   },
+  {
+    key = 'F11',
+    action = wezterm.action.ToggleFullScreen,
+  },
+  {
+    key = 'Enter',
+    mods = 'ALT',
+    action = wezterm.action.DisableDefaultAssignment,
+  },
 }
 
 -- This is how you append in the future
