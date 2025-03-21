@@ -9,8 +9,13 @@ config.color_scheme = 'Gruvbox Dark (Gogh)'
 config.automatically_reload_config = true
 config.window_decorations = 'RESIZE'
 
-config.default_cursor_style = 'BlinkingBlock'
-config.animation_fps = 64
+config.audible_bell = 'Disabled'
+
+config.default_cursor_style = 'SteadyBlock'
+
+-- config.default_cursor_style = 'BlinkingBlock'
+-- Higher numbers look nice but slam gpu
+-- config.animation_fps = 2
 
 -- Required because gnome wayland requires apps to draw their title bar and default is really ugly
 config.enable_wayland = false
