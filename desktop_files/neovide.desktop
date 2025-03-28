@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+
+Name=Neovide
+Exec=/home/raymond/.cargo/bin/neovide
+Icon=nvim
+
+Comment=
+
+Categories=Utility;TextEditor;
+Keywords=text;programming;neovim;nvim;vim;
+
+NoDisplay=false
