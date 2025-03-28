@@ -1,6 +1,20 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
+
+-- Declaring globals no longer allowed without being explicit
+-- https://www.lua.org/pil/14.2.html
+-- This breaks plugins sadly
+--setmetatable(_G, {
+--  __newindex = function (_, n)
+--    error("attempt to write to undeclared variable "..n, 2)
+--  end,
+--  __index = function (_, n)
+--    error("attempt to read undeclared variable "..n, 2)
+--  end,
+--})
+
+
 --config.set_environment_variables = {
 --    WAYLAND_DISPLAY = "wayland",
 --}
